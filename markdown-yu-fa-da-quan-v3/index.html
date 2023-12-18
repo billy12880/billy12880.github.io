@@ -1,0 +1,1934 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="
+0. 什么是Typora
+Typora 是一款支持实时预览的 Markdown 文本编辑器。【功能之强大、设计之冷静、体验之美妙、理念之先进】
+一个文本编辑器，写得舒服是关键。「更有趣的是，一个笔记应用不会因为它支持 Markdown 语..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://billy12880.github.io/media/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://billy12880.github.io/styles/main.css">
+    <!-- 代码渲染风格css -->
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/vs2015.min.css">
+    
+    <!-- 代码高亮插件 -->
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+    <!-- 代码复制插件 -->
+    <script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/clipboard.min.js"></script>
+    <!-- live2d插件 -->
+    <link rel="stylesheet" href="https://billy12880.github.io/media/css/live2d.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    <!-- 数学公式 -->
+    
+    <title>markdown语法大全v3</title>
+
+    <!-- 大纲索引css调整 -->
+    
+    <style>
+        .markdownIt-TOC {
+            margin-left: 28%;
+            padding-left: 2px;
+            width: 80%;
+        }
+
+        .markdownIt-TOC li {
+            padding-left: 8%;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div id="landlord">
+        <div class="message" style="opacity:0"></div>
+        <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
+    </div>
+    <div id="domainname" style="display:none">https://billy12880.github.io</div>
+    <div id="content">
+        <div>
+            <!----------- 移动端导航栏👇 ----------------->
+            <div id="bar">
+                <style>
+  .navmobile {
+    z-index: 15;
+    max-height: 40vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .navbar {
+      max-width: 100vw;
+    }
+  }
+
+  @media screen and (max-width:1200px) and (min-width: 768px) {
+    @media (min-width: 768px) {
+      .navbar-nav {
+        float: right;
+        margin: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    .mbapspan {
+      padding: 0;
+    }
+  }
+</style>
+<div class="pjaxloading"  onclick="pjaxloadingClose()">
+  <div class="loadingbackground"></div>
+  <div id="loading">
+    <div class="loading">
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-inverse navbar-fixed-top navmobile">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barmenu"
+        aria-expanded="false" id="barbutton">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a data-pjax class="navbar-brand" style="color:white" href="https://billy12880.github.io">十三先生&nbsp;&nbsp;|</a>
+      <span class="navbar-brand mbapspan"><i id="mbaplayer" class="fa fa-play-circle-o" aria-hidden="true"
+          style="font-size: 28px;top: 12px;position: absolute;" onclick="aplayerPlay();"></i></span>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="barmenu">
+      <ul class="nav navbar-nav">
+        
+        
+        <li>
+          <a data-pjax href="/" style="color:white">
+            首页
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/archives" style="color:white">
+            归档
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/tags" style="color:white">
+            标签
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/post/about" style="color:white">
+            关于
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        <li><a data-pjax href="https://billy12880.github.io/friends" style="color:white">友链</a></li>
+
+        
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+  <!-- 引入jQuery核心js文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script>
+    let btstate = false;
+    var bt = $("#barbutton");
+    var bm = $("#barmenu");
+    bt.click(function () {
+      dropdown();
+    })
+    function dropdown() {
+      console.log(btstate);
+      //下拉
+      if (btstate == false) {
+        bt.removeClass("collapsed");
+        bt.attr("aria-expanded", "true");
+        bm.attr("aria-expanded", "true")
+        bm.fadeIn(700);
+        btstate = true;
+      }
+      else {
+        bt.addClass("collapsed");
+        bt.attr("aria-expanded", "false");
+        bm.removeClass("in");
+        bm.hide();
+        bm.attr("aria-expanded", "false");
+        btstate = false;
+      }
+    }
+  </script> 
+            </div>
+            <!----------- 移动端导航栏👆 ----------------->
+
+            <!--------------- pc端菜单栏👇 ---------------->
+            <div class="side"><head>
+    <link rel="stylesheet" href="https://billy12880.github.io/media/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://billy12880.github.io/styles/main.css">
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/vs2015.min.css">
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/clipboard.min.js"></script>
+    <link rel="stylesheet" href="https://billy12880.github.io/media/css/live2d.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+    <!--------- 数学公式👇---- -->
+    
+    <!--------- 数学公式👆----------------- -->
+    <!--------- daovocie功能👇 ------------------->
+    
+    <!--------- daovocie功能👆 ------------------->
+    <!-- -----------------twikoo评论系统引入👇 --------->
+    <script src="https://cdn.jsdelivr.net/npm/twikoo@1.3.1/dist/twikoo.all.min.js"></script>
+    <!-- -----------------twikoo评论系统引入👆 --------->
+    <!---------------- leancloud api 功能依赖引入👇 -------->
+    <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.13.0/dist/av-min.js"></script>
+    <!---------------- leancloud api 功能依赖引入👆 -------->
+    <!------------------ valine评论系统引入👇 ------------------>
+    <script src="https://billy12880.github.io/media/js/valine.min.js"></script>
+    <!------------------ valine评论系统引入👆 ------------------>
+    <!---------------- 今日诗词api功能依赖👇 ----------------------->
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    <!---------------- 今日诗词api功能依赖👆 ----------------------->
+    <!---------------- 今日诗词api功能依赖👇 ----------------------->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/ispeak-bber/ispeak-bber.min.js" charset="utf-8"></script>
+    <!---------------- 哔哔功能依赖👆 ----------------------->
+
+
+</head>
+
+<style>
+    body {
+        overflow-x: hidden;
+        height: 100vh;
+        overflow-y: scroll;
+        cursor: url("https://billy12880.github.io/media/images/mouse_cursor.png"), auto
+    }
+</style>
+
+<body>
+    <!--=------ 页面加载动态画面👇 --------------->
+    <div class="pjaxloading" onclick="pjaxloadingClose()">
+        <div class="loadingbackground"></div>
+        <div id="loading-aname">
+            <div class="loading-aname">
+            </div>
+        </div>
+    </div>
+    <!--=------ 页面加载动态画面👆 --------------->
+
+    <!--------------- 左侧菜单栏👇 ------------------------>
+    
+    <div id=side>
+        <div class="r_m_div">
+            <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
+                        src='https://billy12880.github.io/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
+        </div>
+        <div class="avatar-border">
+            <img src="https://billy12880.github.io/images/avatar.png?v=1702930526997" class="avatar">
+        </div>
+        <div class="sitename">十三先生</div>
+        <span class="description" data-text='["温故而知新"]'>&nbsp;</span>
+        <div class="siteinfocontainer">
+            <span class="siteinfo">文章</span>
+            <span class="siteinfo">标签</span>
+        </div>
+        <div class="siteinfocontainer">
+            <span class="siteinfo" id="siteinfo-postsnum"></span>
+            <span class="siteinfo">2</span>
+        </div>
+        
+        <div class="search">
+            <!-- <input type="text" class="search-input" placeholder="标题搜索(●'◡'●)" /> -->
+            <input type="text" class="search-input" placeholder="标题搜索 ⚆_⚆ つ♡">
+            <div class="search-results"></div>
+        </div>
+        
+    <div class="share-button">
+        <span>~~~</span>
+        
+        <a href="www.github.com" target="_blank"><i style="font-size: 20px;"><img class="icon"
+                    src="https://billy12880.github.io/media/images/github.png" alt=""></i></a>
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    <div id="qq" style="display:none"></div>
+    <!------------ 加载菜单按钮👇 ------------------------->
+    <div class="menucontainer">
+        
+        
+        <div class="mchocie description">
+            <a data-pjax href="/" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="首页"></i>&nbsp;<span
+                    data-text="首页">首页</span>
+            </a>
+        </div>
+        
+        
+        
+        <div class="mchocie description">
+            <a data-pjax href="/archives" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="归档"></i>&nbsp;<span
+                    data-text="归档">归档</span>
+            </a>
+        </div>
+        
+        
+        
+        <div class="mchocie description">
+            <a data-pjax href="/tags" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="标签"></i>&nbsp;<span
+                    data-text="标签">标签</span>
+            </a>
+        </div>
+        
+        
+        
+        <div class="mchocie description">
+            <a data-pjax href="/post/about" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="关于"></i>&nbsp;<span
+                    data-text="关于">关于</span>
+            </a>
+        </div>
+        
+        
+
+        
+        
+        
+        <div class="mchocie description">
+            <a data-pjax href="https://billy12880.github.io/friends" class="menubutton" style="margin-right: 15px;">
+                <i><img class="icon menuicon" src="" alt="友人帐"></i>&nbsp;<span data-text="友人帐">友人帐</span>
+            </a>
+        </div>
+        
+        <!--  -->
+    </div>
+    <!------------ 加载菜单按钮👆 ------------------------->
+    <hr>
+    <style>
+    .copyright {
+        font-size: 15px;
+        color: #d9d9d9;
+    }
+
+
+    @media screen and (min-width: 1200px) {
+        .foot {
+            width: 100%;
+            height: 130px;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .foot {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="foot">
+        <div id="footinfo">Powered by <a href="https://github.com" target="_blank">Gridea</a> | Theme: <a
+                href="https://github.com/850552586/gridea-theme-fog">Fog</a>
+            <div>
+                
+            </div>
+            <div>
+                
+            </div>
+            <div class="copyright" style="color:white;text-align: center;">Copyright © 2020  备案号: 鄂ICP备...号
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+    </div>
+
+    <img class="moon" src="https://billy12880.github.io/media/images/moon.png" onclick="moonlight()">
+    <script src="https://billy12880.github.io/media/js/wordshow.js"></script>
+    
+    <!--------------- 左侧菜单栏👆 ------------------------>
+
+    <!----------------- 顶部菜单栏👇 ------------------------>
+    
+    <!----------------- 顶部菜单栏👆 ------------------------>
+
+<!--核心功能加载-->
+<script src="https://billy12880.github.io/media/js/mainfunc.js"></script>
+
+<!------------- Fog1.0版本彩蛋👇 -------------->
+    <!-- <section id="terrestrial" class="popup">
+        <a href="#" class="back">&lt; back</a>
+    </section>
+
+    <div class="flycontainer">
+        <div class="flyword">御风飞行中...</div>
+    </div>
+
+    <script>
+        $("#fog_go").click(function(){fog_go()});
+        async function fog_go(){
+            $(".bars").hide()
+            $("#live2d").hide()
+            await sleep(3000);
+            $(".flycontainer").css("display","flex");
+            $(".popup").fadeOut(500)
+            await sleep(2000);
+            var sitename = "十三先生";
+            getFogUser(sitename);
+        }
+
+        function fog_goregis(){
+            var sitename = "十三先生";
+            var siteurl = "https://billy12880.github.io";
+            regisFogUser(sitename,siteurl);
+        }
+        fog_goregis();
+    </script> -->
+<!------------- Fog1.0版本彩蛋👆 -------------->
+<script>
+    function change_topmenu(){
+        tmcolor = "antiquewhite"
+        tsnamecolor = "#5c7cfa"
+        $(".navbar-inverse .navbar-nav>li>a").css("color",tmcolor)
+        $(".navbar-inverse .navbar-brand").css("color",tsnamecolor)
+        $(".navbar-fixed-top").css("border-radius","0 0 10px 10px")
+    }
+</script>
+
+<!------ 根据自定义配置声明变量👇 --------------------->
+    
+    <script>
+        var postnumChoice = false
+    </script>
+    
+    
+    <script>
+        var shareChoice = false
+    </script>
+    
+    
+    <script>
+        var donateChoice = false
+    </script>
+    
+    
+    <script>
+        var searchChoice = true
+    </script>
+    
+    <script>let postsnum = 0;</script>
+    <div id="side-posttitle" style="display: none;">
+    
+    
+    小皮面板安装wordpress
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    date
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    变通
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    markdown语法大全v3
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    Markdown基本语法
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    哔哩哔哩视频嵌入
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    
+    
+    
+    Hello Gridea
+    <script>
+        postsnum += 1
+    </script>
+    
+    
+    </div>
+    
+        <script>
+            var menupos = 'left';
+            $("#siteinfo-postsnum").html(postsnum);
+        </script>
+    
+    <script>
+        let commentsHide = false
+    </script>
+    <!------ 根据自定义配置声明变量👆 --------------------->
+
+
+    <!----------根据自定义配置设置图标信息👇---------->
+    <script>
+        var icondict = new Array();
+    </script>
+    
+        
+    
+    <!----------根据自定义配置设置图标信息👆---------->
+</body>
+
+<script src="https://billy12880.github.io/media/share/dist/Share.js"></script>
+<!-- 页面pjax测试 -->
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.js"></script>
+<!--确保jQuery已经在此之前加载-->
+<!-- <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script> -->
+<script src="https://billy12880.github.io/media/js/all-pjax.js"></script>
+<script>
+    //-------------------------------说说功能👇--------------------------------------
+    let talksall = [];
+    let talks = [];
+    let talkindex = 0;
+    get();
+
+    function get() {
+        var t = JSON.parse('[]');
+        talkindex = t.length - 1;
+        for (var i = 0; i <= t.length - 1; i++) {
+            var d = {};
+            d["time"] = t[i].time;
+            d["author"] = t[i].author;
+            d["text"] = t[i].text;
+            d["img"] = t[i].img;
+            talksall.push(d);
+        }
+    }
+
+    function add() {
+        for (var i = talkindex; i >= 0 && i > talkindex - 3; i--) {
+            talks.push(talksall[i]);
+        }
+        talkindex = (talkindex - 3) >= 0 ? (talkindex - 3) : -1;
+        if (talkindex < 0) $("#getmorebt").hide();
+        show();
+    }
+
+    function show() {
+        var talkT = document.getElementById("talkContainer");
+        talkT.innerHTML = "";
+        for (var i = 0; i < talks.length; i++) {
+            if (talks[i].img != '') {
+                talkT.innerHTML += '\
+            <div class="talk" v-for="t in talks"> \
+                <span data-fancybox="images" href="' + talks[i].img + '"><img src="' + talks[i].img + '" class="talkimg"></span> \
+                <div class="ainfo">\
+                    <div class="ainfo-intro">\
+                        <div class="author">' + talks[i].author + '</div>·\
+                        <div class="time">' + talks[i].time + '</div>\
+                    </div>\
+                </div>\
+                <div class="talkcontent">' + talks[i].text + '\
+                </div\>\
+            ';
+            } else {
+                talkT.innerHTML += '\
+            <div class="talk" v-for="t in talks"> \
+                <div class="ainfo">\
+                    <div class="ainfo-intro">\
+                        <div class="author">' + talks[i].author + '</div>·\
+                        <div class="time">' + talks[i].time + '</div>\
+                    </div>\
+                </div>\
+                <div class="talkcontent">' + talks[i].text + '\
+                </div\>\
+            ';
+            }
+        }
+    }
+    //-------------------------------说说功能👆--------------------------------------
+</script>
+
+<!---->
+<script>
+    function replaceAvatar() {
+        twikoo_avatar = $(".tk-avatar-img");
+        for (var i = 0; i < twikoo_avatar.length; i++) {
+            var asrc = twikoo_avatar.eq(i).attr('src');
+            if (asrc.search('cn.gravatar.com') != -1) {
+                twikoo_avatar.eq(i).attr('src', 'https://billy12880.github.io/media/images/comavatar.png');
+            }
+        }
+    }
+
+    function showWechat() {
+        var wechat = '';
+        alert("博主微信号：" + wechat);
+        return false;
+    }
+</script>
+
+<script>
+    /**
+     * https://github.com/tangkaichuan/gridea-search
+     */
+    // 检查缓存是否最新
+    function checkCache() {
+        var caches_postsnum = localStorage.getItem("postsnum");
+        var pt = document.getElementById("side-posttitle").innerHTML;
+        pt = pt.replace(/\s+/g, '').replace(/<script>.*?<\/script>/gi, "")
+        var ptlen = pt.length;
+        var ptlen_storage = localStorage.getItem("poststitlelen");
+        if (caches_postsnum != postsnum || ptlen != ptlen_storage) {
+            console.log("更新缓存");
+            return false
+        }
+        return true;
+    }
+
+    (function () {
+        var CACHES = checkCache()
+        if (!CACHES) {
+            var NOW = Date.now()
+            var API_CONTENT = '../api-content/index.html' + '?_=' + NOW
+            preload(API_CONTENT);
+            getContents(show_getContentresult);
+        }
+
+        function show_getContentresult(data) {
+            console.log("获取成功");
+            var postslen = data["posts"].length;
+            localStorage.setItem('postsnum', postslen);
+            var poststitlelen = 0;
+            var pt = document.getElementById("side-posttitle").innerHTML;
+            pt = pt.replace(/\s+/g, '').replace(/<script>.*?<\/script>/gi, "");
+            localStorage.setItem('poststitlelen', pt.length);
+        }
+
+
+
+        // preload
+        function preload(url) {
+            var preloadLink = document.createElement('link')
+            preloadLink.href = url
+            preloadLink.rel = 'preload'
+            preloadLink.as = 'fetch'
+            preloadLink.crossOrigin = 'anonymous'
+            document.head.appendChild(preloadLink)
+        }
+
+        // 异步 GET 请求
+        function get(obj) {
+            var xhr = new XMLHttpRequest()
+            xhr.open('get', obj.url, true)
+            xhr.send(null)
+            xhr.onreadystatechange = function () {
+                // 异步请求：响应状态为4，数据加载完毕
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        obj.success(xhr.responseText)
+                    } else {
+                        obj.error(xhr.status)
+                    }
+                }
+            }
+        }
+
+        // 获取博客全文 api
+        function getContents(callback) {
+            if (CACHES) {
+                callback(CACHES.contents)
+            } else {
+                get({
+                    url: API_CONTENT,
+                    success: function (data) {
+                        callback(JSON.parse(data));
+                        localStorage.setItem('ContentsCache', data);
+                        getStorageContent();
+                    }
+                })
+            }
+        }
+    })()
+    //------------------------核心功能--pjax全局渲染👇-------------------
+    let talkinit = false;
+    $(document).pjax('a[data-pjax]', '#main', {
+        fragment: '#main',
+        timeout: 8000
+    }).on('pjax:complete', function () {
+        //代码块高亮渲染
+        document.querySelectorAll('pre code').forEach((block) => {
+            hljs.highlightBlock(block);
+        });
+        //文章热度
+        if(postnumChoice){
+            getHotnum();
+        }
+        //文章索引
+        toginit();
+        //清空搜索栏
+        if (searchChoice) {
+            searchInit();
+            searchInput.value = "";
+        }
+        var pl = window.location.pathname;
+        //说说更新
+        if (pl.search("talk") != -1 && !talkinit) {
+            add();
+            talkinit = true;
+        } else if (pl.search("talk") != -1) {
+            show();
+        }
+        if (pl.search("post") != -1) {
+            if (shareChoice)
+                shareInit();
+            if (donateChoice)
+                donateInit();
+            if ("default" == "default"&&!commentsHide) {
+                $("#comment").hide()
+                commentsHide = true
+            }
+            lazyload();
+            codeinit();
+            if ("default" == "twikoo") {
+                //twikoo头像更换
+                setTimeout(replaceAvatar, 3000);
+                setTimeout(replaceAvatar, 8000); //部分博主站点速度加载过慢，再添加一个延迟
+            }
+        }
+        if (btstate == true)
+            dropdown();
+    }).on('pjax:start', function () {
+        $(".pjaxloading").fadeIn(50);
+    }).on('pjax:end', function () {
+        $(".pjaxloading").fadeOut(50);
+    });
+    //------------------------核心功能--pjax全局渲染👆-------------------
+
+    //-------------------------------------------------搜索
+    // 获取搜索框、搜索按钮、清空搜索、结果输出对应的元素
+    if (searchChoice) {
+        var searchInput = document.querySelector('.search-input');
+        var searchResults = document.querySelector('.search-results');
+    }
+    // 申明保存文章的标题、链接、内容的数组变量
+    var searchValue = '',
+        arrItems = [],
+        arrLinks = [],
+        arrTitles = [],
+        arrContents = [],
+        arrResults = [],
+        indexItem = [],
+        itemLength = 0;
+    var tmpDiv = document.createElement('div');
+    tmpDiv.className = 'result-item';
+
+
+    function getStorageContent() {
+        var data = localStorage.getItem('ContentsCache');
+        data = JSON.parse(data);
+        posts = data["posts"];
+        for (var i = 0; i < posts.length; i++) {
+            arrLinks[i] = posts[i].link;
+            arrTitles[i] = posts[i].title;
+            arrContents[i] = posts[i].content;
+            itemLength++;
+        }
+    }
+    if (checkCache())
+        getStorageContent();
+    // 输入框内容变化后就开始匹配，可以不用点按钮
+    // 经测试，onkeydown, onchange 等方法效果不太理想，
+    // 存在输入延迟等问题，最后发现触发 input 事件最理想，
+    // 并且可以处理中文输入法拼写的变化
+    searchInput.oninput = function () {
+        setTimeout(searchConfirm, 0);
+    }
+    searchInput.onfocus = function () {
+        searchResults.style.display = 'block';
+    }
+
+    function searchConfirm() {
+        if (searchInput.value == '') {
+            searchResults.style.display = 'none';
+        } else if (searchInput.value.search(/^\s+$/) >= 0) {
+            // 检测输入值全是空白的情况
+            searchInit();
+            var itemDiv = tmpDiv.cloneNode(true);
+            itemDiv.innerText = '请输入有效内容...';
+            searchResults.appendChild(itemDiv);
+        } else {
+            // 合法输入值的情况
+            searchInit();
+            searchValue = searchInput.value;
+            // 在标题、内容中查找
+            searchMatching(arrTitles, arrContents, searchValue);
+        }
+    }
+
+    // 每次搜索完成后的初始化
+    function searchInit() {
+        arrResults = [];
+        indexItem = [];
+        searchResults.innerHTML = '';
+        searchResults.style.display = 'block';
+    }
+
+    function searchMatching(arr1, arr2, input) {
+        // 忽略输入大小写
+        input = new RegExp(input, 'i');
+        var step = 10;
+        // 在所有文章标题、内容中匹配查询值
+        for (i = 0; i < itemLength; i++) {
+            var indexContent = arr2[i].search(input);
+            //标题匹配
+            if (arr1[i].search(input) != -1) {
+                indexItem.push(i); // 保存匹配值的索引
+                if (indexContent != -1) {
+                    startindex = (indexContent - step) >= 0 ? (indexContent - step) : 0;
+                    var searchcontent = arr2[i].slice(indexContent - step, indexContent + 5)
+                    arrResults.push("....." + searchcontent + ".....");
+                } else
+                    arrResults.push("");
+            }
+            //内容匹配
+            else if (indexContent != -1) {
+                indexItem.push(i); // 保存匹配值的索引
+
+                startindex = (indexContent - step) >= 0 ? (indexContent - step) : 0;
+                var searchcontent = arr2[i].slice(indexContent - step, indexContent + 5)
+                arrResults.push("....." + searchcontent + ".....");
+            }
+        }
+
+        // 输出总共匹配到的数目
+        var totalDiv = tmpDiv.cloneNode(true);
+        totalDiv.innerHTML = '<b>总匹配：' + indexItem.length + ' 项<hr></b>';
+        searchResults.appendChild(totalDiv);
+
+        // 未匹配到内容的情况
+        if (indexItem.length == 0) {
+            var itemDiv = tmpDiv.cloneNode(true);
+            itemDiv.innerText = '未匹配到内容...';
+            searchResults.appendChild(itemDiv);
+        }
+
+        // 将所有匹配内容进行组合
+        for (i = 0; i < arrResults.length; i++) {
+            var itemDiv = tmpDiv.cloneNode(true);
+            itemDiv.innerHTML = '<a data-pjax class="searchresults" href="' + arrLinks[indexItem[i]] + '"><b>[' +
+                arrTitles[indexItem[i]] +
+                ']</b><p>' + arrResults[i] + '</p></a><hr />';
+            searchResults.appendChild(itemDiv);
+        }
+    }
+</script>
+
+
+
+<!--------------------- 菜单栏图标加载功能👇 ----------------------->
+<script>
+var menulist = $(".menuicon");
+var menulength = menulist.length;
+for (var i = 0; i < menulength; i++) {
+    var altname = menulist.eq(i).attr("alt");
+    var iconurl = icondict[altname];
+    if (iconurl == undefined || iconurl == '')
+        continue;
+    if (iconurl == 'Home') {
+        menulist.eq(i).attr("src", "https://billy12880.github.io/media/images/Home.png");
+menulist.eq(i).show();
+} else if (iconurl == 'Archive') {
+menulist.eq(i).attr("src", "https://billy12880.github.io/media/images/Archive.png");
+menulist.eq(i).show();
+} else if (iconurl == 'Tag') {
+menulist.eq(i).attr("src", "https://billy12880.github.io/media/images/Tag.png");
+menulist.eq(i).show();
+} else if (iconurl == 'About') {
+menulist.eq(i).attr("src", "https://billy12880.github.io/media/images/About.png");
+menulist.eq(i).show();
+} else if (iconurl == 'Talk') {
+menulist.eq(i).attr("src", "https://billy12880.github.io/media/images/Talk.png");
+menulist.eq(i).show();
+} else if (iconurl == 'Friends') {
+menulist.eq(i).attr("src", "https://billy12880.github.io/media/images/Friends.png");
+menulist.eq(i).show();
+} else if (iconurl == 'Fly') {
+menulist.eq(i).attr("src", "https://billy12880.github.io/media/images/wind.png");
+menulist.eq(i).show();
+} else {
+menulist.eq(i).attr("src", iconurl);
+menulist.eq(i).show();
+}
+}
+</script>
+<!--------------------- 菜单栏图标加载功能👆 ----------------------->
+
+<script>
+    //--------------------bber-onetalk加载👇--------------------------------
+    function bberonetalkLoad(){
+        bberjsonurl = '';
+        if ( $("#bber-talk").length > 0 ) {
+        jsonUrl = bberjsonurl
+        $.getJSON(jsonUrl+"?t="+Date.parse( new Date()),function(res){
+        var bberHtml = ''
+        $.each(res.data, function(i, item){
+            d = new Date(item.date)
+            date = d.getFullYear()+'/'+(d.getMonth()+1)+'/'+d.getDate() +' '+d.getHours()+':'+d.getMinutes()+':'+d.getSeconds()
+            dataTime = '<span class="datatime">'+date+'</span>'
+            bberHtml += '<li class="item item-'+(i+1)+'">'+dataTime+'： <a data-pjax href="https://billy12880.github.io/bber">'+item.content+'</a></li>'
+        });
+        $('#bber-talk').append('<span class="index-talk-icon"><svg viewBox="0 0 1024 1024" width="21" height="21"><path d="M184.32 891.667692c-12.603077 0-25.206154-2.363077-37.809231-7.876923-37.021538-14.966154-59.864615-49.624615-59.864615-89.009231v-275.692307c0-212.676923 173.292308-385.969231 385.969231-385.969231h78.76923c212.676923 0 385.969231 173.292308 385.969231 385.969231 0 169.353846-137.846154 307.2-307.2 307.2H289.083077l-37.021539 37.021538c-18.904615 18.116923-43.323077 28.356923-67.741538 28.356923zM472.615385 195.347692c-178.018462 0-322.953846 144.935385-322.953847 322.953846v275.692308c0 21.267692 15.753846 29.144615 20.48 31.507692 4.726154 2.363077 22.055385 7.876923 37.021539-7.08923l46.473846-46.473846c6.301538-6.301538 14.178462-9.452308 22.055385-9.452308h354.461538c134.695385 0 244.184615-109.489231 244.184616-244.184616 0-178.018462-144.935385-322.953846-322.953847-322.953846H472.615385z"></path><path d="M321.378462 512m-59.076924 0a59.076923 59.076923 0 1 0 118.153847 0 59.076923 59.076923 0 1 0-118.153847 0Z"></path><path d="M518.301538 512m-59.076923 0a59.076923 59.076923 0 1 0 118.153847 0 59.076923 59.076923 0 1 0-118.153847 0Z"></path><path d="M715.224615 512m-59.076923 0a59.076923 59.076923 0 1 0 118.153846 0 59.076923 59.076923 0 1 0-118.153846 0Z"></path></svg></span><ul class="talk-list">'+bberHtml+'</ul>')
+        //Lately({ 'target': '#bber-talk .datatime' });
+        });
+        function Roll (){
+        var list_li = $('.talk-list li'),cur_li = list_li.first(),last_li = list_li.last();
+        last_li.after(cur_li);
+        };
+        setInterval(Roll,3000);
+    }
+    }
+  //--------------------bber-onetalk加载👆--------------------------------
+</script>
+
+<script>
+    var ClicksideState = 1
+    var cur_readingmode = false
+    function readingmode(){
+        if (!cur_readingmode){
+            if(menupos == 'left'){
+                if(ClicksideState==1)
+                menu_openclose1()
+            }
+            $("#tab1").fadeOut(50)
+            $("#bg").fadeOut(50)
+            $(".navbar").fadeOut(50)
+            $(".markdownIt-TOC li a").css("color","black")
+            cur_readingmode = true
+        }else{
+            if(menupos == 'left'){
+                if(ClicksideState==0)
+                    menu_openclose1()
+            }
+            $("#tab1").fadeIn(50)
+            $("#bg").fadeIn(50)
+            $(".navbar").fadeIn(50)
+            $(".markdownIt-TOC li a").css("color","antiquewhite")
+            cur_readingmode = false  
+        }
+    }
+</script>
+
+
+<!----夜间模式👇-->
+<script>
+    var moonlightState = false
+    function moonlight(){
+        if(!moonlightState){
+            $("#bg").fadeOut(200)
+            $('body').css("background","rgba(0,0,0,0.8)")
+            $(".markdownIt-TOC li a").css("color","white")
+            $(".text p, .text ul").css("color","white")
+            $("#articlecontent").css("color","white")
+            $(".post-copyright").css("background","rgba(10,10,10,0.5)")
+            $('blockquote').css("background","rgba(10,10,10,0.6)")
+            $("#articlecontent").css("background","rgba(10,10,10,0.5)")
+            moonlightState = true
+            $(".moon").attr("src","https://billy12880.github.io/media/images/sun.png")
+        }else{
+            $("#bg").show()
+            $(".markdownIt-TOC li a").css("color","antiquewhite")
+            $(".text p, .text ul").css("color","rgba(0, 0, 0, 0.7)")
+            $("#articlecontent").css("color","black")
+            $(".post-copyright").css("background","#f9f9f9")
+            $('blockquote').css("background","#eff8f0")
+            $("#articlecontent").css("background","white")
+            $(".moon").attr("src","https://billy12880.github.io/media/images/moon.png")
+            $('body').css("background","white")
+            moonlightState = false
+        }
+    }
+</script>
+<!----夜间模式👆--></div>
+            <!--------------- pc端菜单栏👆 ---------------->
+
+            <!-- ----------------左侧菜单栏html 👇-------------------------------------->
+            
+            <div>
+                <div id="tab1" class="tab">
+                    <div class="bars">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="close"></div>
+                </div>
+                <div class="col-md-1 col-lg-3"></div>
+                <!-- main标签，pjax渲染时加载以下内容👇 -->
+                <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-7" style="padding:0;">
+                    <div class="readingmode" onclick="readingmode()">阅</div>
+                    <link rel="stylesheet" href="https://billy12880.github.io/media/css/font-awesome.css">
+
+<body>
+    <div class="allcontent" id="postdetail">
+        <div class="postshow postpadding" style="padding-bottom: 0;">
+            
+            <div class="postdetailimg">
+                <img src="https://picshack.net/ib/cprIdhXZ2P.jpg" class="postimage" style="cursor:auto">
+            </div>
+            <div class="postinfo-detail">
+                <div class="postdate"><i class="fa fa-calendar"></i>2023-09-16</div>
+                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 17 min read</div>
+                <div class="posttag">
+                    
+                </div>
+            </div>
+            
+        <div id="articlecontent">
+            <div id="texttitle" style="text-align: center">
+                <h2 id="ptitle">markdown语法大全v3</h2>
+                <!-- id 将作为查询条件 -->
+                <div id="pl" style="display:none">https://billy12880.github.io/markdown-yu-fa-da-quan-v3/</div>
+                <div id="rootaddr" style="display:none">https://billy12880.github.io</div>
+                
+            </div>
+            <div class="text ">
+                <!-- more -->
+<h1 id="0-什么是typora">0. 什么是Typora</h1>
+<p><font color='red'>Typora</font> 是一款<strong>支持实时预览的 <kbd>Markdown</kbd> 文本编辑器</strong>。【<strong>功能之强大、设计之冷静、体验之美妙、理念之先进</strong>】</p>
+<p>一个文本编辑器，<strong>写得舒服</strong>是关键。「更有趣的是，一个笔记应用不会因为它支持 Markdown 语法而高级或易用很多。」，细枝末节处的人性化考虑才是最重要的。而 Typora 的编辑体验显然是经过深思熟虑设计的产物。</p>
+<h1 id="1-基础操作">1. 基础操作</h1>
+<h2 id="11标题">1.1标题</h2>
+<pre><code class="language-markdown"># 		一级标题
+
+## 		二级标题
+
+### 	三级标题
+
+#### 	四级标题
+
+##### 	五级标题
+
+###### 	六级标题
+</code></pre>
+<h2 id="12-引用">1.2 引用</h2>
+<pre><code class="language-markdown">&gt;  引用内容1
+&gt;  引用内容2
+&gt;&gt; 引用内容3
+</code></pre>
+<h2 id="13-斜体">1.3 斜体</h2>
+<pre><code class="language-markdown">*斜体*
+_斜体_
+</code></pre>
+<h2 id="14-加粗">1.4 加粗</h2>
+<pre><code class="language-markdown">**加粗**
+__加粗__
+***加粗斜体***
+</code></pre>
+<h2 id="15-下划线">1.5 下划线</h2>
+<pre><code class="language-markdown">&lt;u&gt;下划线&lt;/u&gt;
+</code></pre>
+<h2 id="16-删除线">1.6 删除线</h2>
+<pre><code class="language-markdown">~~删除线~~
+</code></pre>
+<h2 id="17-分割线">1.7 分割线</h2>
+<pre><code class="language-markdown">***
+---
+___
+</code></pre>
+<h2 id="18-注脚">1.8 注脚</h2>
+<pre><code class="language-markdown">Typora[^1]
+[^1]:A markdown editor
+</code></pre>
+<h2 id="19-上下标高亮">1.9 上下标,高亮</h2>
+<pre><code class="language-markdown">5&lt;sup&gt;2&lt;/sup&gt;=25
+H&lt;sub&gt;2&lt;/sub&gt;OCO&lt;sub&gt;2&lt;/sub&gt;
+
+#以下需要在文件-&gt;偏好设置-&gt;markdown-&gt;markdown拓展语法勾选
+6^2^=36
+H~2~O
+==高亮==
+</code></pre>
+<h2 id="110-目录">1.10 目录</h2>
+<pre><code class="language-markdown">[soc] 自动生成目录
+</code></pre>
+<h2 id="111-换行">1.11 换行</h2>
+<pre><code class="language-markdown">&lt;/br&gt;
+在需要换行的地方插入&lt;/br&gt;
+</code></pre>
+<h3 id="1111-软换行">1.11.1 软换行</h3>
+<h1 id="2-代码">2. 代码</h1>
+<h2 id="21-单行代码">2.1 单行代码</h2>
+<pre><code class="language-markdown">==String str1 = &quot;hello==
+</code></pre>
+<h2 id="22-多行代码">2.2 多行代码</h2>
+<pre><code class="language-html">======
+~~~
+~~~python
+======c
+</code></pre>
+<h2 id="23-注释">2.3 注释</h2>
+<pre><code class="language-html">#html注释
+&lt;!-- 注释 --&gt;
+#hack方法
+[^_^]: # (我是注释，超级萌。)
+*[·-·]:注释内容
+*[^_^]:注释内容
+*[@_@]:注释内容
+</code></pre>
+<h1 id="3-列表">3. 列表</h1>
+<h2 id="31-无序列表">3.1 无序列表</h2>
+<pre><code class="language-markdown">* 无序列表1
++ 无序列表2
+- 无序列表3
+</code></pre>
+<h2 id="32-多行无序列表">3.2 多行无序列表</h2>
+<pre><code class="language-markdown">*         无序列表1
+TAB *     无序列表2
+TAB TAB * 无序列表3
+</code></pre>
+<h2 id="33-有序列表">3.3 有序列表</h2>
+<pre><code class="language-markdown">1. 有序列表1
+2. 有序列表2
+3. 有序列表3
+</code></pre>
+<h2 id="34-多行有序列表">3.4 多行有序列表</h2>
+<pre><code class="language-markdown">1. 多行有序列表1
+2. 多行有序列表2
+    1. 多行有序列表2-1
+    2. 多行有序列表2-2
+3. 多行有序列表3
+    1. 多行有序列表3-1
+    2. 多行有序列表3-2
+</code></pre>
+<h2 id="35-任务列表">3.5 任务列表</h2>
+<pre><code class="language-markdown">- [ ] 任务1
+- [x] 任务2(打勾的选项)
+</code></pre>
+<h2 id="36-表格">3.6 表格</h2>
+<pre><code class="language-markdown">Ctrl + t
+|姓名|性别|年龄|手机号|
+|：---|：--：|：--：|---：|
+|张三|男|21|18975346876|
+|李四|女|23|17789548964|
+|王五|男|25|15876513546|
+</code></pre>
+<h1 id="4-链接">4. 链接</h1>
+<h2 id="41-图片">4.1 图片</h2>
+<pre><code class="language-markdown">![typora](图片的绝对地址)	#本地图片
+![typora](图片的网络地址)	#网络图片
+</code></pre>
+<h2 id="42-超链接">4.2 超链接</h2>
+<pre><code class="language-markdown">样式1.
+	[百度](https://www.baidu.com/)
+样式2.
+	[CSDN][CSDN网址]
+	[CSDN网址]:https://www.csdn.net/
+样式3.
+	&lt;https://www.csdn.net/&gt;
+</code></pre>
+<h2 id="43-框架">4.3 框架</h2>
+<pre><code class="language-markdown">&lt;iframe src=&quot;链接&quot;...参数...&gt;&lt;/iframe&gt;
+</code></pre>
+<h1 id="5-符号的输入">5. 符号的输入</h1>
+<h2 id="51-普通符号">5.1 普通符号</h2>
+<pre><code class="language-markdown">\\
+\==
+\*
+\_
+\{\}
+\[\]
+\(\)
+\#
+\+
+\-
+\.
+\!
+</code></pre>
+<h2 id="52-特殊符号">5.2 特殊符号</h2>
+<pre><code class="language-markdown">&amp;copy;   版权
+&amp;reg;    注册商标
+&amp;trade;  商标
+&amp;nbsp;   空格
+&amp;amp;    和号
+&amp;quot;   引号
+&amp;apos;   撇号
+&amp;lt;     小于号
+&amp;gt;     大于号
+&amp;ne;     不等号
+&amp;le;     小于等于
+&amp;ge;     大于等于
+&amp;cent;   分
+&amp;pound;  磅
+&amp;euro;   欧元
+&amp;yen;    元
+&amp;sect;   节
+&amp;times;  乘号
+&amp;divide; 除号
+&amp;plusmn; 正负号
+</code></pre>
+<h2 id="53-更多符号">5.3 更多符号</h2>
+<p><a href="https://www.jb51.net/onlineread/htmlchar.htm">HTML特殊字符编码对照表</a></p>
+<h2 id="54-表情符号">5.4 表情符号</h2>
+<pre><code class="language-markdown">#支持添加emoji表情，输入不同的符号码（两个冒号包围的字符）可以显示出不同的表情。
+#最新版本的Typora支持彩色表情了
+:smile:
+</code></pre>
+<p><strong>更多表情:<a href="https://github.com/guodongxiaren/README/blob/master/emoji.md">emoji</a></strong></p>
+<h1 id="6-快捷键">6. 快捷键</h1>
+<pre><code class="language-markdown">F8    		专注模式
+F9    		打字机模式
+Ctrl+1  	一阶标题    
+Ctrl+2  	二阶标题    
+Ctrl+3  	三阶标题    
+Ctrl+4  	四阶标题    
+Ctrl+5  	五阶标题    
+Ctrl+6  	六阶标题    
+Ctrl+B  	字体加粗(Blod)
+Ctrl+I  	字体倾斜(Italic)
+Ctrl+U  	下划线(Underline)
+Ctrl+Z		撤销
+Ctrl+T		创建表格(Table)				    
+Ctrl+L  	选中某句话   
+Ctrl+K  	创建超链接
+Ctrl+D  	选中某个单词  
+Ctrl+F  	搜索(Find)
+Ctrl+H		搜索并替换
+Ctrl+\		清楚样式
+Ctrl+E  	选中相同格式的文字  
+Ctrl+Home	 	返回Typora顶部	
+Ctrl+End     	返回Typora底部
+Alt+Shift+5 	删除线 
+Ctrl+Shift+I    插入图片(Image)
+Ctrl+Shift+M    公式块 
+Ctrl+Shift+K	代码块
+Ctrl+Shift+Q    引用(Quote)
+</code></pre>
+<h1 id="7-公式">7. 公式</h1>
+<h2 id="71-latex公式">7.1 Latex公式</h2>
+<p>略，这部分请自行查看相关文件</p>
+<p>同时推荐一个可视化的<a href="https://www.latexlive.com/home">LaTeX公式编辑器</a></p>
+<p>https://www.latexlive.com/</p>
+<p><strong>公式大全（常用版）：</strong><a href="https://link.zhihu.com/?target=https%3A//www.xmind.cn/faq/question/equation/">https://www.xmind.cn/faq/question/equation/</a></p>
+<p><strong>公式大全（完整版）：</strong><a href="https://zhuanlan.zhihu.com/p/67251812">https://zhuanlan.zhihu.com/p/67</a></p>
+<p>转自知乎</p>
+<p>8.Typora表情</p>
+<p>⚠️Typora现在已经支持彩色表情！！！😀</p>
+<p>我觉得这是我最目前最喜欢的一个改善</p>
+<p>可以在正文在标题中插入表情，让你的md文件变得更加丰富多彩！！！</p>
+<p><a href="https://www.webfx.com/tools/emoji-cheat-sheet/">表情网址大全</a> : https://www.webfx.com/tools/emoji-cheat-sheet/</p>
+<p>快速输入方法，输入<code>:</code>后依次输入单词的首字母，会联想输入</p>
+<h1 id="9-typora设置">9. Typora设置</h1>
+<h2 id="91-偏好设置">9.1 偏好设置</h2>
+<pre><code>	菜单栏-文件=&gt;偏好设置
+</code></pre>
+<h2 id="92-模式">9.2 模式</h2>
+<pre><code>	菜单栏__视图=&gt;...
+
+	**「专注模式」**使你正在编辑的那一行保留颜色，而其他行的字体呈灰色。
+
+	**「打字机模式」**使得你所编辑的那一行永远处于屏幕正中。
+
+	**「源代码模式」**以源代码显示
+</code></pre>
+<h2 id="93-主题设置">9.3 主题设置</h2>
+<pre><code>	菜单栏==&gt;主题
+
+	选择一个喜欢的主题来使用吧！
+</code></pre>
+<h2 id="94-图片插入">9.4 图片插入</h2>
+<ul>
+<li>直接使用 <mark>右键 - 复制 Ctrl + V</mark> 将网络图片、剪贴板图片复制到文档中</li>
+<li>拖动本地图片到文档中</li>
+</ul>
+<p>Typora 会自动帮你插入符合 Markdown 语法的图片语句，并给它加上标题。</p>
+<p>你也完全可以使用图床来保证文档在分享后图片仍能正常显示。</p>
+<p>更强大的是，Typora 支持在拖动或 <mark>Ctrl + V</mark> 网络图片后自动将其保存到本地。你可以在 <mark>文件 - 偏好设置 - 编辑器 - 图片插入</mark> 中选择复制到哪个路径，什么情况下需要复制。</p>
+<p><img src="https://cdn.sspai.com/2019/05/24/717da653ad91e938c5f1f40555b9c057.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" alt="img" loading="lazy">图片插入</p>
+<p>这一功能保证了即使网络图片源失效了，你还有本地的备份可用。同时也能使你的文档文件夹更合理、完整。</p>
+<h2 id="95-空格与换行">9.5 空格与换行</h2>
+<p>Typora 在空格与换行部分主要是使用 <a href="http://www.commonmark.cn/w/">CommonMark</a> 作为标注规范。与前文提到的 GFM 一样，CommonMark 也是比较流行的 Markdown 语言规范（解析器）之一。</p>
+<ul>
+<li>**空格：**在输入连续的空格后，Typora 会在编辑器视图里为你保留这些空格，但当你打印或导出时，这些空格会被省略成一个。<br>
+你可以在源代码模式下，为每个空格前加一个<mark>转义符</mark>，或者直接使用 HTML 风格的 <mark>&amp;nbps;</mark> 来保持连续的空格。</li>
+<li>**软换行：**需要说明的是，在 Markdown 语法中，换行（line break）与换段是不同的。且换行分为软换行和硬换行。在 Typora 中，你可以通过 <mark>Shift + Enter</mark> 完成一次软换行。软换行只在编辑界面可见，当文档被导出时换行会被省略。</li>
+<li>**硬换行：**你可以通过 <mark>空格 + 空格 + Shift + Enter</mark> 完成一次硬换行，而这也是许多 Markdown 编辑器所原生支持的。硬换行在文档被导出时将被保留，且没有换段的段后距。</li>
+<li>**换段：**你可以通过 <mark>Enter</mark> 完成一次换段。Typora 会自动帮你完成两次 <mark>Shift + Enter</mark> 的软换行，从而完成一次换段。这也意味着在 Markdown 语法下，换段是通过在段与段之间加入空行来实现的。</li>
+<li>**Windows 风格（CR+LF）与 Unix 风格（CR）的换行符：**CR 表示回车 <mark>\r</mark> ，即回到一行的开头，而 LF 表示换行 <mark>\n</mark> ，即另起一行。<br>
+所以 Windows 风格的换行符本质是「回车 + 换行」，而 Unix 风格的换行符是「换行」。这也是为什么 Unix / Mac 系统下的文件，如果在 Windows 系统直接打开会全部在同一行内。 你可以在 <mark>文件 - 偏好设置 - 编辑器 - 默认换行符</mark> 中对此进行切换。</li>
+</ul>
+<p>下附以上各空格、换行、换段的测试结果图。具体内容你可以在官网的 <a href="http://support.typora.io/Line-Break/">这篇文档</a> 中查阅。</p>
+<h1 id="10-进阶知识">10. 进阶知识</h1>
+<h2 id="101-html">10.1 HTML</h2>
+<p>Markdown支持HTML的标签</p>
+<p>颜色代码查询:<strong><a href="https://blog.csdn.net/heimu24/article/details/81192697">RGB颜色查询表</a></strong></p>
+<h2 id="102-字体-字号-颜色设置">10.2 字体、字号、颜色设置</h2>
+<pre><code class="language-html">&lt;font face=&quot;微软雅黑&quot; &gt;微软雅黑字体&lt;/font&gt;
+&lt;font face=&quot;黑体&quot; &gt;黑体&lt;/font&gt;
+&lt;font size=3 &gt;3号字&lt;/font&gt;
+&lt;font size=4 &gt;4号字&lt;/font&gt;
+&lt;font color=#FF0000 &gt;红色&lt;/font&gt;
+&lt;font color=#008000 &gt;绿色&lt;/font&gt;
+&lt;font color=#0000FF &gt;蓝色&lt;/font&gt;
+&lt;font color=#0099ff size=7 face=&quot;黑体&quot;&gt;集中在一个标签中&lt;/font&gt;
+</code></pre>
+<h2 id="103-文字添加背景色">10.3 文字添加背景色</h2>
+<pre><code class="language-html">&lt;table&gt;
+    &lt;tr align=center&gt;
+        &lt;td bgcolor=yellow&gt;背景色yellow&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>参数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>align</td>
+<td>定义表格行的内容对齐方式。</td>
+<td>right     右对齐<br/>left       左对齐<br/>center  居中对齐</td>
+</tr>
+<tr>
+<td>bgcolor</td>
+<td>规定表格行的背景颜色。</td>
+<td>rgb(x,x,x)<br/>#xxxxxx<br/>颜色名字</td>
+</tr>
+</tbody>
+</table>
+<h2 id="104-按键效果">10.4 按键效果</h2>
+<pre><code class="language-html">html的行内元素&lt;kbd&gt;&lt;/kbd&gt;，可以达到表示按键的效果
+&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;R&lt;/kbd&gt;
+</code></pre>
+<h2 id="105-设置图片大小">10.5 设置图片大小</h2>
+<h3 id="1051-设置图片百分比">10.5.1 设置图片百分比</h3>
+<pre><code class="language-markdown">&lt;img src=&quot;图片链接&quot; width=&quot;50%&quot; height=&quot;50%&quot;&gt;
+</code></pre>
+<h3 id="1052-设置图片大小">10.5.2 设置图片大小</h3>
+<pre><code class="language-markdown">&lt;img src=&quot;图片链接&quot; width=&quot;251&quot; height=&quot;350&quot; &gt;
+</code></pre>
+<h3 id="1053-设置图片居中">10.5.3 设置图片居中</h3>
+<pre><code class="language-markdown">&lt;div align=right&gt;&lt;img src=&quot;图片链接&quot; width=&quot;50%&quot; height=&quot;50%&quot;&gt;&lt;/div&gt;
+</code></pre>
+<h2 id="106-流程图">10.6 流程图</h2>
+<h3 id="1061-横向流程图源码格式">10.6.1 横向流程图源码格式</h3>
+<pre><code class="language-markdown">graph LR
+A[方形] --&gt; B(圆角)
+    B --&gt; C{条件a}
+    C --&gt; |a=1| D[结果1]
+    C --&gt; |a=2| E[结果2]
+    F[横向流程图]
+</code></pre>
+<pre><code class="language-mermaid">graph LR
+A[方形] --&gt; B(圆角)
+    B --&gt; C{条件a}
+    C --&gt; |a=1| D[结果1]
+    C --&gt; |a=2| E[结果2]
+    F[横向流程图]
+</code></pre>
+<h3 id="1062-竖向流程图源码格式">10.6.2 竖向流程图源码格式</h3>
+<pre><code class="language-markdown">graph TD
+A[方形] --&gt; B(圆角)
+    B --&gt; C{条件a}
+    C --&gt; |a=1| D[结果1]
+    C --&gt; |a=2| E[结果2]
+    F[竖向流程图]
+</code></pre>
+<pre><code class="language-mermaid">graph TD
+A[方形] --&gt; B(圆角)
+    B --&gt; C{条件a}
+    C --&gt; |a=1| D[结果1]
+    C --&gt; |a=2| E[结果2]
+    F[竖向流程图]
+</code></pre>
+<h3 id="1064-标准流程图源码格式">10.6.4 标准流程图源码格式</h3>
+<pre><code class="language-markdown">st=&gt;start: 开始框
+op=&gt;operation: 处理框
+cond=&gt;condition: 判断框
+sub1=&gt;subroutine: 子流程
+io=&gt;inputoutput: 输入输出框
+e=&gt;end: 结束框
+st-&gt;op-&gt;cond
+cond(yes)-&gt;io-&gt;e
+cond(no)-&gt;sub1(right)-&gt;op
+</code></pre>
+<pre><code class="language-flow">st=&gt;start: 开始框
+op=&gt;operation: 处理框
+cond=&gt;condition: 判断框
+sub1=&gt;subroutine: 子流程
+io=&gt;inputoutput: 输入输出框
+e=&gt;end: 结束框
+st-&gt;op-&gt;cond
+cond(yes)-&gt;io-&gt;e
+cond(no)-&gt;sub1(right)-&gt;op
+</code></pre>
+<h3 id="1065-标准流程图源码格式横向">10.6.5   标准流程图源码格式(横向)</h3>
+<pre><code class="language-markdown">st=&gt;start: 开始框
+op=&gt;operation: 处理框
+cond=&gt;condition: 判断框(是或否?)
+sub1=&gt;subroutine: 子流程
+io=&gt;inputoutput: 输入输出框
+e=&gt;end: 结束框
+st(right)-&gt;op(right)-&gt;cond
+cond(yes)-&gt;io(bottom)-&gt;e
+cond(no)-&gt;sub1(right)-&gt;op
+</code></pre>
+<pre><code class="language-flow">st=&gt;start: 开始框
+op=&gt;operation: 处理框
+cond=&gt;condition: 判断框(是或否?)
+sub1=&gt;subroutine: 子流程
+io=&gt;inputoutput: 输入输出框
+e=&gt;end: 结束框
+st(right)-&gt;op(right)-&gt;cond
+cond(yes)-&gt;io(bottom)-&gt;e
+cond(no)-&gt;sub1(right)-&gt;op
+</code></pre>
+<h1 id="11-拓展">11. 拓展</h1>
+<h2 id="111-autohotkey">11.1 AutoHotKey</h2>
+<h3 id="1111-初始代码">11.1.1 初始代码</h3>
+<p>由于Typora无法自行调节字体颜色，需要用HTML标签来设置，而手动输入标签设置太过繁琐，经过在网上查阅相关知识，最终选择使用AutoHotKey（以下简称AHK）来进行快捷设置</p>
+<ol>
+<li>
+<p>下载AHK，点击链接下载 <a href="https://autohotkey.com/download/ahk-install.exe">AHK下载</a></p>
+</li>
+<li>
+<p>点击安装，右键新建一个AHK文件</p>
+</li>
+<li>
+<p>输入以下代码,并保存</p>
+<pre><code class="language-AHK">; Typora
+; 快捷增加字体颜色
+; SendInput {Text} 解决中文输入法问题
+
+#IfWinActive ahk_exe Typora.exe
+{
+    ; alt+0 kbd
+    !0::addKbd()
+  
+    ; alt+1 红色
+    !1::addFontColor(&quot;red&quot;)
+
+    ; alt+1 橙色
+    !2::addFontColor(&quot;orange&quot;) 
+
+     ; alt+3 黄色
+    !3::addFontColor(&quot;yellow&quot;)
+
+     ; alt+4 绿色
+    !4::addFontColor(&quot;green&quot;)
+
+    ; alt+5 浅蓝色
+    !5::addFontColor(&quot;cornflowerblue&quot;)
+
+     ; alt+6 青色
+    !6::addFontColor(&quot;cyan&quot;) 
+
+   ; alt+7 紫色
+    !7::addFontColor(&quot;purple&quot;)
+
+}
+
+; 快捷增加字体颜色
+addFontColor(color){
+    clipboard := &quot;&quot; ; 清空剪切板
+    Send {ctrl down}c{ctrl up} ; 复制
+    SendInput {TEXT}&lt;font color='%color%'&gt;
+    SendInput {ctrl down}v{ctrl up} ; 粘贴
+    If(clipboard = &quot;&quot;){
+        SendInput {TEXT}&lt;/font&gt; ; Typora 在这不会自动补充
+    }else{
+        SendInput {TEXT}&lt;/ ; Typora中自动补全标签
+    }
+}
+addKbd(){
+    clipboard := &quot;&quot; ; 清空剪切板
+    Send {ctrl down}c{ctrl up} ; 复制
+    SendInput {TEXT}&lt;kbd&gt;
+    SendInput {ctrl down}v{ctrl up} ; 粘贴
+    If(clipboard = &quot;&quot;){
+        SendInput {TEXT}&lt;/kbd&gt; ; Typora 在这不会自动补充
+    }else{
+        SendInput {TEXT}&lt;/ ; Typora中自动补全标签
+    }
+}
+</code></pre>
+</li>
+</ol>
+<h3 id="1112-vhk美化">11.1.2 VHK美化</h3>
+<p><strong>需要一定的windows操作基础</strong></p>
+<p>1.对代码进行修改,确保启动VHK的同时还能启动Typora</p>
+<pre><code>; Typora
+; 快捷增加字体颜色，同时打开同时关闭
+; SendInput {Text} 解决中文输入法问题
+
+;Typora的运行路径
+Run,D:\我的程序\typora\Typora\Typora.exe
+
+;设置延迟1秒，避免程序还未加载，就退出脚本
+sleep 1000
+
+;每隔一秒判断一次窗口是否还在，不在则退出窗口
+while WinExist(&quot;ahk_exe Typora.exe&quot;){
+sleep 1000
+}
+ExitApp
+
+;修改字体颜色，快捷键只在Typora内可以用
+#IfWinActive ahk_exe Typora.exe
+{
+    ; alt+0 kbd
+    !0::addKbd()
+  
+    ; alt+1 红色
+    !1::addFontColor(&quot;red&quot;)
+
+    ; alt+1 橙色
+    !2::addFontColor(&quot;orange&quot;) 
+
+     ; alt+3 黄色
+    !3::addFontColor(&quot;yellow&quot;)
+
+     ; alt+4 绿色
+    !4::addFontColor(&quot;green&quot;)
+
+    ; alt+5 浅蓝色
+    !5::addFontColor(&quot;cornflowerblue&quot;)
+
+     ; alt+6 青色
+    !6::addFontColor(&quot;cyan&quot;) 
+
+   ; alt+7 紫色
+    !7::addFontColor(&quot;purple&quot;)
+
+}
+
+; 快捷增加字体颜色
+addFontColor(color){
+    clipboard := &quot;&quot; ; 清空剪切板
+    Send {ctrl down}c{ctrl up} ; 复制
+    SendInput {TEXT}&lt;font color='%color%'&gt;
+    SendInput {ctrl down}v{ctrl up} ; 粘贴
+    If(clipboard = &quot;&quot;){
+        SendInput {TEXT}&lt;/font&gt; ; Typora 在这不会自动补充
+    }else{
+        SendInput {TEXT}&lt;/ ; Typora中自动补全标签
+    }
+}
+addKbd(){
+    clipboard := &quot;&quot; ; 清空剪切板
+    Send {ctrl down}c{ctrl up} ; 复制
+    SendInput {TEXT}&lt;kbd&gt;
+    SendInput {ctrl down}v{ctrl up} ; 粘贴
+    If(clipboard = &quot;&quot;){
+        SendInput {TEXT}&lt;/kbd&gt; ; Typora 在这不会自动补充
+    }else{
+        SendInput {TEXT}&lt;/ ; Typora中自动补全标签
+    }
+}
+</code></pre>
+<p>2.对Typora启动快捷方式所指向路径修改</p>
+<img src="../图片文件夹/image-20210214231214072.png" alt="image-20210214231214072" style="zoom:50%;" />
+<p>3.这里会发现启动方式的图标变了,变成一个VHK的图标,这里点击上图的更改图标,选择Typora.exe,发现有图标提供选择,选择原始那个就好</p>
+<p>4.修改完毕，尽情使用吧！</p>
+<h2 id="112-vlooktm">11.2 VLOOK<sup>TM</sup></h2>
+<h3 id="1121-什么是-vlooktm">11.2.1 什么是 VLOOK<sup>TM</sup></h3>
+<p><a href="https://github.com/MadMaxChow/VLOOK">VLOOK™</a> 是针对由 <a href="https://www.typora.io/">Typora</a>（目前最好的跨平台 Markdown 编辑器，没有之一）导出的 HTML 文件进行增强的插件。</p>
+<p>VLOOK™ 也许是目前最好的 Markdown 增强插件之一，也是==<strong>开源中国（<a href="https://www.oschina.net/p/vlook">OSChina.net</a>）推荐的国产开源产品</strong>。==</p>
+<p><a href="https://madmaxchow.github.io/VLOOK/theme-fancy.html">VLOOK™说明文档及演示</a></p>
+<h2 id="113-typora主题推荐">11.3 Typora主题推荐</h2>
+<p><strong>Typora</strong> 官网主题 : https://theme.typora.io/</p>
+<p>为 Typora 编写自定义主题: <strong>https://theme.typora.io/doc/Write-Custom-Theme/</strong> （可以自己编写）</p>
+<p>官网主题推荐 <strong>Drake</strong></p>
+<ul>
+<li>白天主题 Drake Google</li>
+<li>晚上主题 Drake Vue3</li>
+</ul>
+<h3 id="下载主题方法">下载主题方法</h3>
+<p>打开主题的网址</p>
+<p>选中喜欢的主题</p>
+<p>点击下载</p>
+<p>⚠️有部分下载的压缩包，请解压，然后把解压出来的所有文件都按照下方的方法移入文件夹</p>
+<h3 id="安装主题方法">安装主题方法</h3>
+<ul>
+<li>首先确定已安装<a href="https://typora.io/">Typora</a></li>
+<li>通过<code>文件 -&gt; 偏好设置 -&gt; 打开主题文件夹</code>打开theme目录</li>
+<li>复制你想要的对应主题名称<code>*.css</code>后缀文件 到<code>theme</code>目录下然后重启, 选择菜单 -&gt; 主题</li>
+<li>重启</li>
+</ul>
+<h1 id="12其他软件">12.其他软件</h1>
+<p>在2022年，Typora再也不是非你不可，Typora还是没有更新仓库文件夹。</p>
+<p>并且现在的笔记软件已经进入到了一条新的赛道上，那就是<mark>第二大脑</mark>的工作流</p>
+<p>相关链接如下</p>
+<p>建立第二个大脑：概述 - 知乎<br>
+https://zhuanlan.zhihu.com/p/434544404</p>
+<p>推荐黑曜石，也就是 obsidian 软件</p>
+
+            </div>
+            <hr style="width: 80%;">
+            
+            <div class="postfooter">
+                <ul class="post-copyright">
+                    <li><strong>文章作者：</strong></li>
+            <li><strong>原文链接：</strong>https://billy12880.github.io/markdown-yu-fa-da-quan-v3/</li>
+            <li><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用<i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA
+                许可协议。转载请注明出处！</li>
+            </ul>
+        </div>
+        
+        <div id="otherpost">
+            
+            <a  data-pjax class="prev-post-pc" href="https://billy12880.github.io/bian-tong/"  style="color: black;">
+                <div id="ppcontainer">
+                    
+                    <img src="https://picshack.net/ib/oy1ck0gTwL.jpg" style="width: 100%;" class="opimg">
+                    
+                    <h4 class="optitle">变通</h4>
+                </div>
+            </a>
+            <div class="prev-post">
+                上一篇 <a  data-pjax href="https://billy12880.github.io/bian-tong/">变通</a>
+            </div>
+            
+            
+            <a data-pjax class="next-post-pc" href="https://billy12880.github.io/markdown-ji-ben-yu-fa/"  style="color: black;">
+                <div id="npcontainer">
+                    
+                    <img src="https://billy12880.github.io/post-images/markdown-ji-ben-yu-fa.png" style="width: 100%;" class="opimg">
+                    
+                    <h4 class="optitle">Markdown基本语法</h4>
+                </div>
+            </a>
+            <div class="next-post">
+                下一篇 <a  data-pjax href="https://billy12880.github.io/markdown-ji-ben-yu-fa/">Markdown基本语法</a>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- 弹窗 -->
+    <div id="myModal" class="modal">
+        <img class="modal-content" id="img01">
+    </div>
+</body>
+<script>
+    //文章阅读热度
+    var pl = $("#pl").html();
+    var rootaddr = $("#rootaddr").html();
+    pl = pl.replace(rootaddr, "");
+    $("#hotnum").attr('id', pl);
+</script>
+                    <div class="toc-container">
+                        <ul class="markdownIt-TOC">
+<li><a href="#0-%E4%BB%80%E4%B9%88%E6%98%AFtypora">0. 什么是Typora</a></li>
+<li><a href="#1-%E5%9F%BA%E7%A1%80%E6%93%8D%E4%BD%9C">1. 基础操作</a>
+<ul>
+<li><a href="#11%E6%A0%87%E9%A2%98">1.1标题</a></li>
+<li><a href="#12-%E5%BC%95%E7%94%A8">1.2 引用</a></li>
+<li><a href="#13-%E6%96%9C%E4%BD%93">1.3 斜体</a></li>
+<li><a href="#14-%E5%8A%A0%E7%B2%97">1.4 加粗</a></li>
+<li><a href="#15-%E4%B8%8B%E5%88%92%E7%BA%BF">1.5 下划线</a></li>
+<li><a href="#16-%E5%88%A0%E9%99%A4%E7%BA%BF">1.6 删除线</a></li>
+<li><a href="#17-%E5%88%86%E5%89%B2%E7%BA%BF">1.7 分割线</a></li>
+<li><a href="#18-%E6%B3%A8%E8%84%9A">1.8 注脚</a></li>
+<li><a href="#19-%E4%B8%8A%E4%B8%8B%E6%A0%87%E9%AB%98%E4%BA%AE">1.9 上下标,高亮</a></li>
+<li><a href="#110-%E7%9B%AE%E5%BD%95">1.10 目录</a></li>
+<li><a href="#111-%E6%8D%A2%E8%A1%8C">1.11 换行</a>
+<ul>
+<li><a href="#1111-%E8%BD%AF%E6%8D%A2%E8%A1%8C">1.11.1 软换行</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#2-%E4%BB%A3%E7%A0%81">2. 代码</a>
+<ul>
+<li><a href="#21-%E5%8D%95%E8%A1%8C%E4%BB%A3%E7%A0%81">2.1 单行代码</a></li>
+<li><a href="#22-%E5%A4%9A%E8%A1%8C%E4%BB%A3%E7%A0%81">2.2 多行代码</a></li>
+<li><a href="#23-%E6%B3%A8%E9%87%8A">2.3 注释</a></li>
+</ul>
+</li>
+<li><a href="#3-%E5%88%97%E8%A1%A8">3. 列表</a>
+<ul>
+<li><a href="#31-%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8">3.1 无序列表</a></li>
+<li><a href="#32-%E5%A4%9A%E8%A1%8C%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8">3.2 多行无序列表</a></li>
+<li><a href="#33-%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8">3.3 有序列表</a></li>
+<li><a href="#34-%E5%A4%9A%E8%A1%8C%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8">3.4 多行有序列表</a></li>
+<li><a href="#35-%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8">3.5 任务列表</a></li>
+<li><a href="#36-%E8%A1%A8%E6%A0%BC">3.6 表格</a></li>
+</ul>
+</li>
+<li><a href="#4-%E9%93%BE%E6%8E%A5">4. 链接</a>
+<ul>
+<li><a href="#41-%E5%9B%BE%E7%89%87">4.1 图片</a></li>
+<li><a href="#42-%E8%B6%85%E9%93%BE%E6%8E%A5">4.2 超链接</a></li>
+<li><a href="#43-%E6%A1%86%E6%9E%B6">4.3 框架</a></li>
+</ul>
+</li>
+<li><a href="#5-%E7%AC%A6%E5%8F%B7%E7%9A%84%E8%BE%93%E5%85%A5">5. 符号的输入</a>
+<ul>
+<li><a href="#51-%E6%99%AE%E9%80%9A%E7%AC%A6%E5%8F%B7">5.1 普通符号</a></li>
+<li><a href="#52-%E7%89%B9%E6%AE%8A%E7%AC%A6%E5%8F%B7">5.2 特殊符号</a></li>
+<li><a href="#53-%E6%9B%B4%E5%A4%9A%E7%AC%A6%E5%8F%B7">5.3 更多符号</a></li>
+<li><a href="#54-%E8%A1%A8%E6%83%85%E7%AC%A6%E5%8F%B7">5.4 表情符号</a></li>
+</ul>
+</li>
+<li><a href="#6-%E5%BF%AB%E6%8D%B7%E9%94%AE">6. 快捷键</a></li>
+<li><a href="#7-%E5%85%AC%E5%BC%8F">7. 公式</a>
+<ul>
+<li><a href="#71-latex%E5%85%AC%E5%BC%8F">7.1 Latex公式</a></li>
+</ul>
+</li>
+<li><a href="#9-typora%E8%AE%BE%E7%BD%AE">9. Typora设置</a>
+<ul>
+<li><a href="#91-%E5%81%8F%E5%A5%BD%E8%AE%BE%E7%BD%AE">9.1 偏好设置</a></li>
+<li><a href="#92-%E6%A8%A1%E5%BC%8F">9.2 模式</a></li>
+<li><a href="#93-%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE">9.3 主题设置</a></li>
+<li><a href="#94-%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5">9.4 图片插入</a></li>
+<li><a href="#95-%E7%A9%BA%E6%A0%BC%E4%B8%8E%E6%8D%A2%E8%A1%8C">9.5 空格与换行</a></li>
+</ul>
+</li>
+<li><a href="#10-%E8%BF%9B%E9%98%B6%E7%9F%A5%E8%AF%86">10. 进阶知识</a>
+<ul>
+<li><a href="#101-html">10.1 HTML</a></li>
+<li><a href="#102-%E5%AD%97%E4%BD%93-%E5%AD%97%E5%8F%B7-%E9%A2%9C%E8%89%B2%E8%AE%BE%E7%BD%AE">10.2 字体、字号、颜色设置</a></li>
+<li><a href="#103-%E6%96%87%E5%AD%97%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%E8%89%B2">10.3 文字添加背景色</a></li>
+<li><a href="#104-%E6%8C%89%E9%94%AE%E6%95%88%E6%9E%9C">10.4 按键效果</a></li>
+<li><a href="#105-%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E5%A4%A7%E5%B0%8F">10.5 设置图片大小</a>
+<ul>
+<li><a href="#1051-%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E7%99%BE%E5%88%86%E6%AF%94">10.5.1 设置图片百分比</a></li>
+<li><a href="#1052-%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E5%A4%A7%E5%B0%8F">10.5.2 设置图片大小</a></li>
+<li><a href="#1053-%E8%AE%BE%E7%BD%AE%E5%9B%BE%E7%89%87%E5%B1%85%E4%B8%AD">10.5.3 设置图片居中</a></li>
+</ul>
+</li>
+<li><a href="#106-%E6%B5%81%E7%A8%8B%E5%9B%BE">10.6 流程图</a>
+<ul>
+<li><a href="#1061-%E6%A8%AA%E5%90%91%E6%B5%81%E7%A8%8B%E5%9B%BE%E6%BA%90%E7%A0%81%E6%A0%BC%E5%BC%8F">10.6.1 横向流程图源码格式</a></li>
+<li><a href="#1062-%E7%AB%96%E5%90%91%E6%B5%81%E7%A8%8B%E5%9B%BE%E6%BA%90%E7%A0%81%E6%A0%BC%E5%BC%8F">10.6.2 竖向流程图源码格式</a></li>
+<li><a href="#1064-%E6%A0%87%E5%87%86%E6%B5%81%E7%A8%8B%E5%9B%BE%E6%BA%90%E7%A0%81%E6%A0%BC%E5%BC%8F">10.6.4 标准流程图源码格式</a></li>
+<li><a href="#1065-%E6%A0%87%E5%87%86%E6%B5%81%E7%A8%8B%E5%9B%BE%E6%BA%90%E7%A0%81%E6%A0%BC%E5%BC%8F%E6%A8%AA%E5%90%91">10.6.5   标准流程图源码格式(横向)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#11-%E6%8B%93%E5%B1%95">11. 拓展</a>
+<ul>
+<li><a href="#111-autohotkey">11.1 AutoHotKey</a>
+<ul>
+<li><a href="#1111-%E5%88%9D%E5%A7%8B%E4%BB%A3%E7%A0%81">11.1.1 初始代码</a></li>
+<li><a href="#1112-vhk%E7%BE%8E%E5%8C%96">11.1.2 VHK美化</a></li>
+</ul>
+</li>
+<li><a href="#112-vlooktm">11.2 VLOOK^TM^</a>
+<ul>
+<li><a href="#1121-%E4%BB%80%E4%B9%88%E6%98%AF-vlooktm">11.2.1 什么是 VLOOK^TM^</a></li>
+</ul>
+</li>
+<li><a href="#113-typora%E4%B8%BB%E9%A2%98%E6%8E%A8%E8%8D%90">11.3 Typora主题推荐</a>
+<ul>
+<li><a href="#%E4%B8%8B%E8%BD%BD%E4%B8%BB%E9%A2%98%E6%96%B9%E6%B3%95">下载主题方法</a></li>
+<li><a href="#%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98%E6%96%B9%E6%B3%95">安装主题方法</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#12%E5%85%B6%E4%BB%96%E8%BD%AF%E4%BB%B6">12.其他软件</a></li>
+</ul>
+
+                    </div>
+                    <div class="tog">
+                        <div class="toggleContainer">
+                            <div class="toggle">
+                                <i class="fas fa-angle-double-up"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!---------------------------- 评论系统👇 ------------------------->
+                    <div id="comment" class="comment">
+                        <div class="commentcontainer">
+                            
+                                
+                            
+                        </div>
+                    </div>
+                    <!---------------------------- 评论系统👆 ------------------------->
+                </div>
+                <!-- main标签，pjax渲染时加载以上内容👆 -->
+                <div class="col-md-1 col-lg-2"></div>
+                <div id="bg">
+                </div>
+            </div>
+            <!-- ----------------左侧菜单栏html 👆-------------------------------------->
+            
+        </div>
+        <!-- aplayer播放器加载👇 -->
+            
+        <!-- aplayer播放器加载👆 -->
+    </div>
+    <!-- 背景图加载方式👇 -->
+    <div id="bgchoice" style="display: none">link
+                </div>
+                
+                <div id="bgurl" style="display:none"></div>
+                
+    <!-- 背景图加载方式👆 -->
+</body>
+
+<script>
+    //初始化
+    //更换twikoo头像
+    setTimeout(replaceAvatar,1000);
+    setTimeout(replaceAvatar,2000);
+    setTimeout(replaceAvatar,8000);
+    // --------为每张图片添加懒加载（lazyload）标签-->懒加载功能 👇------------
+    lazyload();
+    //为文章内所有代码块添加代码复制功能 👇
+    codeinit();
+    // ------代码高亮显示功能-------------
+    hljs.initHighlightingOnLoad();
+    if (shareChoice)
+        shareInit();
+    if (donateChoice)
+        donateInit();
+</script>
+
+<!------------------ 加载live2d模型功能（看板娘）👇 ---------------->
+
+<script type="text/javascript">
+    var message_Path = '/live2d/'
+    var home_Path = document.getElementById("domainname").innerHTML + "/"; //此处修改为你的域名，必须带斜杠
+</script>
+<script type="text/javascript" src="https://billy12880.github.io/media/js/live2d.js"></script>
+<script type="text/javascript" src="https://billy12880.github.io/media/live2d/js/message.js"></script>
+<script type="text/javascript">
+    loadlive2d("live2d", "https://billy12880.github.io/media/live2d/assets/tororo.model.json");
+</script>
+
+<!------------------ 加载live2d模型功能（看板娘）👆 ---------------->
+
+
+<!----------------------- 返回顶部按钮功能👇 --------------------->
+<script>
+    $(function () {
+        $('.toggleContainer').click(function () {
+            $('html,body').animate({
+                scrollTop: '0px'
+            }, 800);
+        });
+        $(window).scroll(function () {
+            var st = $(window).scrollTop();
+            if (st > 30) {
+                $(".toggleContainer").fadeIn(400);
+            } else {
+                $(".toggleContainer").fadeOut(100);
+            }
+        });
+    });
+</script>
+<!----------------------- 返回顶部按钮功能👆 --------------------->
+
+
+<!------------ 加载全局背景图功能👇（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
+<script>
+    var bgchoice = "link"
+    var bg = $('#bg');
+    var bgurl = document.getElementById("bgurl").innerHTML;
+    if (bgchoice == 'default')
+    {
+        for (var i = 0; i < 3; i++)
+            bgurl = bgurl.replace("\\", "/");
+        bgurl = "https://billy12880.github.io/" + bgurl;
+    }
+    bg.css("background", "url('" + bgurl + "')");
+
+    window.onload = function () {
+        aplayerbtnInit();
+    }
+</script>
+<!------------ 加载全局背景图功能👆（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
+
+
+
+
+<script src="https://billy12880.github.io/media/js/index.js"></script>
+
+
+<script>
+    //加载后的事件同步（阅读量、移动端评论等
+    window.onload = function () {
+    //代码块高亮渲染
+    document.querySelectorAll('pre code').forEach((block) => {
+            hljs.highlightBlock(block);
+    });
+        getHotnum();
+        var sharepc = $(".share").eq(0).html();
+        $(".share").eq(1).html(sharepc);   //插件只会寻找一个分享标签渲染，所以需要手动添加到移动端
+        aplayerbtnInit();
+        $(".hljs").css({
+            "padding": "20px"
+        })
+    }
+</script>
+
+<!-- <script src="https://billy12880.github.io/media/js/av-min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.13.0/dist/av-min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-live-query-min.js"></script> -->

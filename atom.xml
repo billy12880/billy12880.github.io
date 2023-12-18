@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://billy12880.github.io</id>
+    <title>十三先生</title>
+    <updated>2023-12-18T20:16:09.042Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://billy12880.github.io"/>
+    <link rel="self" href="https://billy12880.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://billy12880.github.io/images/avatar.png</logo>
+    <icon>https://billy12880.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, 十三先生</rights>
+    <entry>
+        <title type="html"><![CDATA[小皮面板安装wordpress]]></title>
+        <id>https://billy12880.github.io/xiao-pi-mian-ban-an-zhuang-wordpress/</id>
+        <link href="https://billy12880.github.io/xiao-pi-mian-ban-an-zhuang-wordpress/">
+        </link>
+        <updated>2023-12-06T09:05:41.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="1-下载小皮并安装">1、下载小皮并安装</h2>
+<p>https://www.xp.cn/</p>
+<h2 id="2-小皮安装phpmyadmin">2、小皮安装phpmyadmin</h2>
+<figure data-type="image" tabindex="1"><img src="https://cdn.jsdelivr.net/gh/shisanblog/pic@main//picture/2311/202312061715753.png" alt="image-20231206171255494" loading="lazy"></figure>
+<h2 id="3-开启服务">3、开启服务</h2>
+<figure data-type="image" tabindex="2"><img src="https://cdn.jsdelivr.net/gh/shisanblog/pic@main//picture/2311/202312061715393.png" alt="image-20231206171552265" loading="lazy"></figure>
+<h2 id="4-新建数据库">4、新建数据库</h2>
+<figure data-type="image" tabindex="3"><img src="https://cdn.jsdelivr.net/gh/shisanblog/pic@main//picture/2311/202312061717157.png" alt="image-20231206171718447" loading="lazy"></figure>
+<h2 id="5-下载wordpress并解压至www目录下">5、下载wordpress，并解压至www目录下</h2>
+<blockquote>
+<p>把目录下index等问件删除了<br>
+<img src="https://cdn.jsdelivr.net/gh/shisanblog/pic@main//picture/2311/202312061719179.png" alt="image-20231206171920967" loading="lazy"></p>
+</blockquote>
+<h2 id="6-locallhost安提示输入数据库密码并安装">6、locallhost安提示输入数据库密码并安装</h2>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[date]]></title>
+        <id>https://billy12880.github.io/biao-ge/</id>
+        <link href="https://billy12880.github.io/biao-ge/">
+        </link>
+        <updated>2023-12-01T19:27:23.000Z</updated>
+        <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th>D</th>
+<th>T</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023-11-30</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[变通]]></title>
+        <id>https://billy12880.github.io/bian-tong/</id>
+        <link href="https://billy12880.github.io/bian-tong/">
+        </link>
+        <updated>2023-09-16T01:32:24.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="变通">变通</h1>
+<h2 id="第一章">第一章</h2>
+<h3 id="跳蚤效应">跳蚤效应</h3>
+<p>把跳蚤放在桌子上，一拍桌子，跳蚤立刻跳起来，跳起高度均在自己身高的100倍以上，堪称跳的最高的动物。然后他们在跳蚤头上罩一个玻璃罩，再让它跳。第一次跳蚤就碰到了玻璃罩，连续多次碰壁后，跳蚤改变了起跳高度以适应环境，每次跳跃高度总保持在罩顶以下。接下来，科学家逐渐改变玻璃罩的高度，这使跳蚤都在碰壁后主动改变跳跃高度。最后，玻璃罩接近桌面，这时跳蚤已无法再跳了。于是，科学家把玻璃罩打开，再拍桌子，跳蚤仍然不会跳，变成了“爬蚤”了。</p>
+<figure data-type="image" tabindex="1"><img src="https://k.sinaimg.cn/n/spider2020726/23/w500h323/20200726/51b8-iwxpesw8582544.jpg/w700d1q75cms.jpg?by=cms_fixed_width" alt="img" loading="lazy"></figure>
+<h3 id="没有人可以让你贬值除非你自己">没有人可以让你贬值，除非你自己</h3>
+<p>在一次讨论会上，一位著名的演说家没讲一句开场白，手里却高举着一张20美元的钞票。面对会议室里的200个人，他问：“谁要这20美元？”一只只手举了起来。他接着说：“我打算把这20美元送给你们中的一位，但在这之前，请准许我做一件事。”他说着将钞票揉成一团，然后问：“谁还要？”仍有人举起手来。</p>
+<p>他又说：“那么，假如我这样做又会怎么样呢？”他把钞票扔到地上，又踏上一只脚，并且用脚碾它。尔后他拾起钞票，钞票已变得又脏又皱。“现在谁还要？”还是有人举起手来。</p>
+<p>“朋友们，你们已经上了一堂很有意义的课。无论我如何对待那张钞票，还是有人想要它，因为它并没贬值，它依旧值20美元。人生路上，我们会无数次被自己的决定或碰到的逆境击倒、欺凌，甚至碾得粉身碎骨，我们觉得自己似乎一文不值。但无论发生什么，或将要发生什么，在上帝的眼中，你们永远不会丧失价值。在他看来，无论你们肮脏或是洁净，衣着齐整或是不齐整，你们都是无价之宝。生命的价值不依赖我们的所作所为，也不仰仗我们结交的人物，而是取决于我们本身，也就是说，完全属于你的内心所想！你们是独特的——永远不要忘记这一点！”是的，生命的价值取决于我们自身，除了自己，没有人能让你贬值。</p>
+<figure data-type="image" tabindex="2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTfy3dy8AguYbg0Gec_7WggYhZPQi3_5jevQ&amp;usqp=CAU" alt="虽说自然阴晴无常，但只要心中有阳光_生活" loading="lazy"></figure>
+<h3 id="温水煮青蛙">温水煮青蛙</h3>
+<p>在19世纪末，美国康乃尔大学做过一次有名的青蛙实验。他们把一只青蛙冷不防丢进煮沸的油锅里，在那千钧一发的生死关头，青蛙用尽全力，一下就跃出了那势必使它葬身的滚烫的油锅，跳到锅外的地面上，安全逃生。</p>
+<p>半小时后，他们使用同样的锅，在锅里放满冷水，然后又把那只死里逃生的青蛙放到锅里，接着用炭火慢慢烘烤锅底。青蛙悠然地在水中享受“温暖”，等它感觉到承受不住水的温度，必须奋力逃命时，却发现为时已晚，欲跃无力。青蛙全身瘫痪，终于葬身在热锅里。</p>
+<figure data-type="image" tabindex="3"><img src="https://img1.utuku.imgcdc.com/550x0/military/20230627/13d3ac75-4c91-4bc1-a9e4-6683587e7d61.jpg" alt="美或将温水煮青蛙式衰退美国实现“金发姑娘软着陆”的可能性只有23%_中华网" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[markdown语法大全v3]]></title>
+        <id>https://billy12880.github.io/markdown-yu-fa-da-quan-v3/</id>
+        <link href="https://billy12880.github.io/markdown-yu-fa-da-quan-v3/">
+        </link>
+        <updated>2023-09-16T01:20:41.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<h1 id="0-什么是typora">0. 什么是Typora</h1>
+<p><font color='red'>Typora</font> 是一款<strong>支持实时预览的 <kbd>Markdown</kbd> 文本编辑器</strong>。【<strong>功能之强大、设计之冷静、体验之美妙、理念之先进</strong>】</p>
+<p>一个文本编辑器，<strong>写得舒服</strong>是关键。「更有趣的是，一个笔记应用不会因为它支持 Markdown 语法而高级或易用很多。」，细枝末节处的人性化考虑才是最重要的。而 Typora 的编辑体验显然是经过深思熟虑设计的产物。</p>
+<h1 id="1-基础操作">1. 基础操作</h1>
+<h2 id="11标题">1.1标题</h2>
+<pre><code class="language-markdown"># 		一级标题
+
+## 		二级标题
+
+### 	三级标题
+
+#### 	四级标题
+
+##### 	五级标题
+
+###### 	六级标题
+</code></pre>
+<h2 id="12-引用">1.2 引用</h2>
+<pre><code class="language-markdown">&gt;  引用内容1
+&gt;  引用内容2
+&gt;&gt; 引用内容3
+</code></pre>
+<h2 id="13-斜体">1.3 斜体</h2>
+<pre><code class="language-markdown">*斜体*
+_斜体_
+</code></pre>
+<h2 id="14-加粗">1.4 加粗</h2>
+<pre><code class="language-markdown">**加粗**
+__加粗__
+***加粗斜体***
+</code></pre>
+<h2 id="15-下划线">1.5 下划线</h2>
+<pre><code class="language-markdown">&lt;u&gt;下划线&lt;/u&gt;
+</code></pre>
+<h2 id="16-删除线">1.6 删除线</h2>
+<pre><code class="language-markdown">~~删除线~~
+</code></pre>
+<h2 id="17-分割线">1.7 分割线</h2>
+<pre><code class="language-markdown">***
+---
+___
+</code></pre>
+<h2 id="18-注脚">1.8 注脚</h2>
+<pre><code class="language-markdown">Typora[^1]
+[^1]:A markdown editor
+</code></pre>
+<h2 id="19-上下标高亮">1.9 上下标,高亮</h2>
+<pre><code class="language-markdown">5&lt;sup&gt;2&lt;/sup&gt;=25
+H&lt;sub&gt;2&lt;/sub&gt;OCO&lt;sub&gt;2&lt;/sub&gt;
+
+#以下需要在文件-&gt;偏好设置-&gt;markdown-&gt;markdown拓展语法勾选
+6^2^=36
+H~2~O
+==高亮==
+</code></pre>
+<h2 id="110-目录">1.10 目录</h2>
+<pre><code class="language-markdown">[soc] 自动生成目录
+</code></pre>
+<h2 id="111-换行">1.11 换行</h2>
+<pre><code class="language-markdown">&lt;/br&gt;
+在需要换行的地方插入&lt;/br&gt;
+</code></pre>
+<h3 id="1111-软换行">1.11.1 软换行</h3>
+<h1 id="2-代码">2. 代码</h1>
+<h2 id="21-单行代码">2.1 单行代码</h2>
+<pre><code class="language-markdown">==String str1 = &quot;hello==
+</code></pre>
+<h2 id="22-多行代码">2.2 多行代码</h2>
+<pre><code class="language-html">======
+~~~
+~~~python
+======c
+</code></pre>
+<h2 id="23-注释">2.3 注释</h2>
+<pre><code class="language-html">#html注释
+&lt;!-- 注释 --&gt;
+#hack方法
+[^_^]: # (我是注释，超级萌。)
+*[·-·]:注释内容
+*[^_^]:注释内容
+*[@_@]:注释内容
+</code></pre>
+<h1 id="3-列表">3. 列表</h1>
+<h2 id="31-无序列表">3.1 无序列表</h2>
+<pre><code class="language-markdown">* 无序列表1
++ 无序列表2
+- 无序列表3
+</code></pre>
+<h2 id="32-多行无序列表">3.2 多行无序列表</h2>
+<pre><code class="language-markdown">*         无序列表1
+TAB *     无序列表2
+TAB TAB * 无序列表3
+</code></pre>
+<h2 id="33-有序列表">3.3 有序列表</h2>
+<pre><code class="language-markdown">1. 有序列表1
+2. 有序列表2
+3. 有序列表3
+</code></pre>
+<h2 id="34-多行有序列表">3.4 多行有序列表</h2>
+<pre><code class="language-markdown">1. 多行有序列表1
+2. 多行有序列表2
+    1. 多行有序列表2-1
+    2. 多行有序列表2-2
+3. 多行有序列表3
+    1. 多行有序列表3-1
+    2. 多行有序列表3-2
+</code></pre>
+<h2 id="35-任务列表">3.5 任务列表</h2>
+<pre><code class="language-markdown">- [ ] 任务1
+- [x] 任务2(打勾的选项)
+</code></pre>
+<h2 id="36-表格">3.6 表格</h2>
+<pre><code class="language-markdown">Ctrl + t
+|姓名|性别|年龄|手机号|
+|：---|：--：|：--：|---：|
+|张三|男|21|18975346876|
+|李四|女|23|17789548964|
+|王五|男|25|15876513546|
+</code></pre>
+<h1 id="4-链接">4. 链接</h1>
+<h2 id="41-图片">4.1 图片</h2>
+<pre><code class="language-markdown">![typora](图片的绝对地址)	#本地图片
+![typora](图片的网络地址)	#网络图片
+</code></pre>
+<h2 id="42-超链接">4.2 超链接</h2>
+<pre><code class="language-markdown">样式1.
+	[百度](https://www.baidu.com/)
+样式2.
+	[CSDN][CSDN网址]
+	[CSDN网址]:https://www.csdn.net/
+样式3.
+	&lt;https://www.csdn.net/&gt;
+</code></pre>
+<h2 id="43-框架">4.3 框架</h2>
+<pre><code class="language-markdown">&lt;iframe src=&quot;链接&quot;...参数...&gt;&lt;/iframe&gt;
+</code></pre>
+<h1 id="5-符号的输入">5. 符号的输入</h1>
+<h2 id="51-普通符号">5.1 普通符号</h2>
+<pre><code class="language-markdown">\\
+\==
+\*
+\_
+\{\}
+\[\]
+\(\)
+\#
+\+
+\-
+\.
+\!
+</code></pre>
+<h2 id="52-特殊符号">5.2 特殊符号</h2>
+<pre><code class="language-markdown">&amp;copy;   版权
+&amp;reg;    注册商标
+&amp;trade;  商标
+&amp;nbsp;   空格
+&amp;amp;    和号
+&amp;quot;   引号
+&amp;apos;   撇号
+&amp;lt;     小于号
+&amp;gt;     大于号
+&amp;ne;     不等号
+&amp;le;     小于等于
+&amp;ge;     大于等于
+&amp;cent;   分
+&amp;pound;  磅
+&amp;euro;   欧元
+&amp;yen;    元
+&amp;sect;   节
+&amp;times;  乘号
+&amp;divide; 除号
+&amp;plusmn; 正负号
+</code></pre>
+<h2 id="53-更多符号">5.3 更多符号</h2>
+<p><a href="https://www.jb51.net/onlineread/htmlchar.htm">HTML特殊字符编码对照表</a></p>
+<h2 id="54-表情符号">5.4 表情符号</h2>
+<pre><code class="language-markdown">#支持添加emoji表情，输入不同的符号码（两个冒号包围的字符）可以显示出不同的表情。
+#最新版本的Typora支持彩色表情了
+:smile:
+</code></pre>
+<p><strong>更多表情:<a href="https://github.com/guodongxiaren/README/blob/master/emoji.md">emoji</a></strong></p>
+<h1 id="6-快捷键">6. 快捷键</h1>
+<pre><code class="language-markdown">F8    		专注模式
+F9    		打字机模式
+Ctrl+1  	一阶标题    
+Ctrl+2  	二阶标题    
+Ctrl+3  	三阶标题    
+Ctrl+4  	四阶标题    
+Ctrl+5  	五阶标题    
+Ctrl+6  	六阶标题    
+Ctrl+B  	字体加粗(Blod)
+Ctrl+I  	字体倾斜(Italic)
+Ctrl+U  	下划线(Underline)
+Ctrl+Z		撤销
+Ctrl+T		创建表格(Table)				    
+Ctrl+L  	选中某句话   
+Ctrl+K  	创建超链接
+Ctrl+D  	选中某个单词  
+Ctrl+F  	搜索(Find)
+Ctrl+H		搜索并替换
+Ctrl+\		清楚样式
+Ctrl+E  	选中相同格式的文字  
+Ctrl+Home	 	返回Typora顶部	
+Ctrl+End     	返回Typora底部
+Alt+Shift+5 	删除线 
+Ctrl+Shift+I    插入图片(Image)
+Ctrl+Shift+M    公式块 
+Ctrl+Shift+K	代码块
+Ctrl+Shift+Q    引用(Quote)
+</code></pre>
+<h1 id="7-公式">7. 公式</h1>
+<h2 id="71-latex公式">7.1 Latex公式</h2>
+<p>略，这部分请自行查看相关文件</p>
+<p>同时推荐一个可视化的<a href="https://www.latexlive.com/home">LaTeX公式编辑器</a></p>
+<p>https://www.latexlive.com/</p>
+<p><strong>公式大全（常用版）：</strong><a href="https://link.zhihu.com/?target=https%3A//www.xmind.cn/faq/question/equation/">https://www.xmind.cn/faq/question/equation/</a></p>
+<p><strong>公式大全（完整版）：</strong><a href="https://zhuanlan.zhihu.com/p/67251812">https://zhuanlan.zhihu.com/p/67</a></p>
+<p>转自知乎</p>
+<p>8.Typora表情</p>
+<p>⚠️Typora现在已经支持彩色表情！！！😀</p>
+<p>我觉得这是我最目前最喜欢的一个改善</p>
+<p>可以在正文在标题中插入表情，让你的md文件变得更加丰富多彩！！！</p>
+<p><a href="https://www.webfx.com/tools/emoji-cheat-sheet/">表情网址大全</a> : https://www.webfx.com/tools/emoji-cheat-sheet/</p>
+<p>快速输入方法，输入<code>:</code>后依次输入单词的首字母，会联想输入</p>
+<h1 id="9-typora设置">9. Typora设置</h1>
+<h2 id="91-偏好设置">9.1 偏好设置</h2>
+<pre><code>	菜单栏-文件=&gt;偏好设置
+</code></pre>
+<h2 id="92-模式">9.2 模式</h2>
+<pre><code>	菜单栏__视图=&gt;...
+
+	**「专注模式」**使你正在编辑的那一行保留颜色，而其他行的字体呈灰色。
+
+	**「打字机模式」**使得你所编辑的那一行永远处于屏幕正中。
+
+	**「源代码模式」**以源代码显示
+</code></pre>
+<h2 id="93-主题设置">9.3 主题设置</h2>
+<pre><code>	菜单栏==&gt;主题
+
+	选择一个喜欢的主题来使用吧！
+</code></pre>
+<h2 id="94-图片插入">9.4 图片插入</h2>
+<ul>
+<li>直接使用 <mark>右键 - 复制 Ctrl + V</mark> 将网络图片、剪贴板图片复制到文档中</li>
+<li>拖动本地图片到文档中</li>
+</ul>
+<p>Typora 会自动帮你插入符合 Markdown 语法的图片语句，并给它加上标题。</p>
+<p>你也完全可以使用图床来保证文档在分享后图片仍能正常显示。</p>
+<p>更强大的是，Typora 支持在拖动或 <mark>Ctrl + V</mark> 网络图片后自动将其保存到本地。你可以在 <mark>文件 - 偏好设置 - 编辑器 - 图片插入</mark> 中选择复制到哪个路径，什么情况下需要复制。</p>
+<p><img src="https://cdn.sspai.com/2019/05/24/717da653ad91e938c5f1f40555b9c057.png?imageView2/2/w/1120/q/90/interlace/1/ignore-error/1" alt="img" loading="lazy">图片插入</p>
+<p>这一功能保证了即使网络图片源失效了，你还有本地的备份可用。同时也能使你的文档文件夹更合理、完整。</p>
+<h2 id="95-空格与换行">9.5 空格与换行</h2>
+<p>Typora 在空格与换行部分主要是使用 <a href="http://www.commonmark.cn/w/">CommonMark</a> 作为标注规范。与前文提到的 GFM 一样，CommonMark 也是比较流行的 Markdown 语言规范（解析器）之一。</p>
+<ul>
+<li>**空格：**在输入连续的空格后，Typora 会在编辑器视图里为你保留这些空格，但当你打印或导出时，这些空格会被省略成一个。<br>
+你可以在源代码模式下，为每个空格前加一个<mark>转义符</mark>，或者直接使用 HTML 风格的 <mark>&amp;nbps;</mark> 来保持连续的空格。</li>
+<li>**软换行：**需要说明的是，在 Markdown 语法中，换行（line break）与换段是不同的。且换行分为软换行和硬换行。在 Typora 中，你可以通过 <mark>Shift + Enter</mark> 完成一次软换行。软换行只在编辑界面可见，当文档被导出时换行会被省略。</li>
+<li>**硬换行：**你可以通过 <mark>空格 + 空格 + Shift + Enter</mark> 完成一次硬换行，而这也是许多 Markdown 编辑器所原生支持的。硬换行在文档被导出时将被保留，且没有换段的段后距。</li>
+<li>**换段：**你可以通过 <mark>Enter</mark> 完成一次换段。Typora 会自动帮你完成两次 <mark>Shift + Enter</mark> 的软换行，从而完成一次换段。这也意味着在 Markdown 语法下，换段是通过在段与段之间加入空行来实现的。</li>
+<li>**Windows 风格（CR+LF）与 Unix 风格（CR）的换行符：**CR 表示回车 <mark>\r</mark> ，即回到一行的开头，而 LF 表示换行 <mark>\n</mark> ，即另起一行。<br>
+所以 Windows 风格的换行符本质是「回车 + 换行」，而 Unix 风格的换行符是「换行」。这也是为什么 Unix / Mac 系统下的文件，如果在 Windows 系统直接打开会全部在同一行内。 你可以在 <mark>文件 - 偏好设置 - 编辑器 - 默认换行符</mark> 中对此进行切换。</li>
+</ul>
+<p>下附以上各空格、换行、换段的测试结果图。具体内容你可以在官网的 <a href="http://support.typora.io/Line-Break/">这篇文档</a> 中查阅。</p>
+<h1 id="10-进阶知识">10. 进阶知识</h1>
+<h2 id="101-html">10.1 HTML</h2>
+<p>Markdown支持HTML的标签</p>
+<p>颜色代码查询:<strong><a href="https://blog.csdn.net/heimu24/article/details/81192697">RGB颜色查询表</a></strong></p>
+<h2 id="102-字体-字号-颜色设置">10.2 字体、字号、颜色设置</h2>
+<pre><code class="language-html">&lt;font face=&quot;微软雅黑&quot; &gt;微软雅黑字体&lt;/font&gt;
+&lt;font face=&quot;黑体&quot; &gt;黑体&lt;/font&gt;
+&lt;font size=3 &gt;3号字&lt;/font&gt;
+&lt;font size=4 &gt;4号字&lt;/font&gt;
+&lt;font color=#FF0000 &gt;红色&lt;/font&gt;
+&lt;font color=#008000 &gt;绿色&lt;/font&gt;
+&lt;font color=#0000FF &gt;蓝色&lt;/font&gt;
+&lt;font color=#0099ff size=7 face=&quot;黑体&quot;&gt;集中在一个标签中&lt;/font&gt;
+</code></pre>
+<h2 id="103-文字添加背景色">10.3 文字添加背景色</h2>
+<pre><code class="language-html">&lt;table&gt;
+    &lt;tr align=center&gt;
+        &lt;td bgcolor=yellow&gt;背景色yellow&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+<th>参数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>align</td>
+<td>定义表格行的内容对齐方式。</td>
+<td>right     右对齐<br/>left       左对齐<br/>center  居中对齐</td>
+</tr>
+<tr>
+<td>bgcolor</td>
+<td>规定表格行的背景颜色。</td>
+<td>rgb(x,x,x)<br/>#xxxxxx<br/>颜色名字</td>
+</tr>
+</tbody>
+</table>
+<h2 id="104-按键效果">10.4 按键效果</h2>
+<pre><code class="language-html">html的行内元素&lt;kbd&gt;&lt;/kbd&gt;，可以达到表示按键的效果
+&lt;kbd&gt;ctrl&lt;/kbd&gt; + &lt;kbd&gt;R&lt;/kbd&gt;
+</code></pre>
+<h2 id="105-设置图片大小">10.5 设置图片大小</h2>
+<h3 id="1051-设置图片百分比">10.5.1 设置图片百分比</h3>
+<pre><code class="language-markdown">&lt;img src=&quot;图片链接&quot; width=&quot;50%&quot; height=&quot;50%&quot;&gt;
+</code></pre>
+<h3 id="1052-设置图片大小">10.5.2 设置图片大小</h3>
+<pre><code class="language-markdown">&lt;img src=&quot;图片链接&quot; width=&quot;251&quot; height=&quot;350&quot; &gt;
+</code></pre>
+<h3 id="1053-设置图片居中">10.5.3 设置图片居中</h3>
+<pre><code class="language-markdown">&lt;div align=right&gt;&lt;img src=&quot;图片链接&quot; width=&quot;50%&quot; height=&quot;50%&quot;&gt;&lt;/div&gt;
+</code></pre>
+<h2 id="106-流程图">10.6 流程图</h2>
+<h3 id="1061-横向流程图源码格式">10.6.1 横向流程图源码格式</h3>
+<pre><code class="language-markdown">graph LR
+A[方形] --&gt; B(圆角)
+    B --&gt; C{条件a}
+    C --&gt; |a=1| D[结果1]
+    C --&gt; |a=2| E[结果2]
+    F[横向流程图]
+</code></pre>
+<pre><code class="language-mermaid">graph LR
+A[方形] --&gt; B(圆角)
+    B --&gt; C{条件a}
+    C --&gt; |a=1| D[结果1]
+    C --&gt; |a=2| E[结果2]
+    F[横向流程图]
+</code></pre>
+<h3 id="1062-竖向流程图源码格式">10.6.2 竖向流程图源码格式</h3>
+<pre><code class="language-markdown">graph TD
+A[方形] --&gt; B(圆角)
+    B --&gt; C{条件a}
+    C --&gt; |a=1| D[结果1]
+    C --&gt; |a=2| E[结果2]
+    F[竖向流程图]
+</code></pre>
+<pre><code class="language-mermaid">graph TD
+A[方形] --&gt; B(圆角)
+    B --&gt; C{条件a}
+    C --&gt; |a=1| D[结果1]
+    C --&gt; |a=2| E[结果2]
+    F[竖向流程图]
+</code></pre>
+<h3 id="1064-标准流程图源码格式">10.6.4 标准流程图源码格式</h3>
+<pre><code class="language-markdown">st=&gt;start: 开始框
+op=&gt;operation: 处理框
+cond=&gt;condition: 判断框
+sub1=&gt;subroutine: 子流程
+io=&gt;inputoutput: 输入输出框
+e=&gt;end: 结束框
+st-&gt;op-&gt;cond
+cond(yes)-&gt;io-&gt;e
+cond(no)-&gt;sub1(right)-&gt;op
+</code></pre>
+<pre><code class="language-flow">st=&gt;start: 开始框
+op=&gt;operation: 处理框
+cond=&gt;condition: 判断框
+sub1=&gt;subroutine: 子流程
+io=&gt;inputoutput: 输入输出框
+e=&gt;end: 结束框
+st-&gt;op-&gt;cond
+cond(yes)-&gt;io-&gt;e
+cond(no)-&gt;sub1(right)-&gt;op
+</code></pre>
+<h3 id="1065-标准流程图源码格式横向">10.6.5   标准流程图源码格式(横向)</h3>
+<pre><code class="language-markdown">st=&gt;start: 开始框
+op=&gt;operation: 处理框
+cond=&gt;condition: 判断框(是或否?)
+sub1=&gt;subroutine: 子流程
+io=&gt;inputoutput: 输入输出框
+e=&gt;end: 结束框
+st(right)-&gt;op(right)-&gt;cond
+cond(yes)-&gt;io(bottom)-&gt;e
+cond(no)-&gt;sub1(right)-&gt;op
+</code></pre>
+<pre><code class="language-flow">st=&gt;start: 开始框
+op=&gt;operation: 处理框
+cond=&gt;condition: 判断框(是或否?)
+sub1=&gt;subroutine: 子流程
+io=&gt;inputoutput: 输入输出框
+e=&gt;end: 结束框
+st(right)-&gt;op(right)-&gt;cond
+cond(yes)-&gt;io(bottom)-&gt;e
+cond(no)-&gt;sub1(right)-&gt;op
+</code></pre>
+<h1 id="11-拓展">11. 拓展</h1>
+<h2 id="111-autohotkey">11.1 AutoHotKey</h2>
+<h3 id="1111-初始代码">11.1.1 初始代码</h3>
+<p>由于Typora无法自行调节字体颜色，需要用HTML标签来设置，而手动输入标签设置太过繁琐，经过在网上查阅相关知识，最终选择使用AutoHotKey（以下简称AHK）来进行快捷设置</p>
+<ol>
+<li>
+<p>下载AHK，点击链接下载 <a href="https://autohotkey.com/download/ahk-install.exe">AHK下载</a></p>
+</li>
+<li>
+<p>点击安装，右键新建一个AHK文件</p>
+</li>
+<li>
+<p>输入以下代码,并保存</p>
+<pre><code class="language-AHK">; Typora
+; 快捷增加字体颜色
+; SendInput {Text} 解决中文输入法问题
+
+#IfWinActive ahk_exe Typora.exe
+{
+    ; alt+0 kbd
+    !0::addKbd()
+  
+    ; alt+1 红色
+    !1::addFontColor(&quot;red&quot;)
+
+    ; alt+1 橙色
+    !2::addFontColor(&quot;orange&quot;) 
+
+     ; alt+3 黄色
+    !3::addFontColor(&quot;yellow&quot;)
+
+     ; alt+4 绿色
+    !4::addFontColor(&quot;green&quot;)
+
+    ; alt+5 浅蓝色
+    !5::addFontColor(&quot;cornflowerblue&quot;)
+
+     ; alt+6 青色
+    !6::addFontColor(&quot;cyan&quot;) 
+
+   ; alt+7 紫色
+    !7::addFontColor(&quot;purple&quot;)
+
+}
+
+; 快捷增加字体颜色
+addFontColor(color){
+    clipboard := &quot;&quot; ; 清空剪切板
+    Send {ctrl down}c{ctrl up} ; 复制
+    SendInput {TEXT}&lt;font color='%color%'&gt;
+    SendInput {ctrl down}v{ctrl up} ; 粘贴
+    If(clipboard = &quot;&quot;){
+        SendInput {TEXT}&lt;/font&gt; ; Typora 在这不会自动补充
+    }else{
+        SendInput {TEXT}&lt;/ ; Typora中自动补全标签
+    }
+}
+addKbd(){
+    clipboard := &quot;&quot; ; 清空剪切板
+    Send {ctrl down}c{ctrl up} ; 复制
+    SendInput {TEXT}&lt;kbd&gt;
+    SendInput {ctrl down}v{ctrl up} ; 粘贴
+    If(clipboard = &quot;&quot;){
+        SendInput {TEXT}&lt;/kbd&gt; ; Typora 在这不会自动补充
+    }else{
+        SendInput {TEXT}&lt;/ ; Typora中自动补全标签
+    }
+}
+</code></pre>
+</li>
+</ol>
+<h3 id="1112-vhk美化">11.1.2 VHK美化</h3>
+<p><strong>需要一定的windows操作基础</strong></p>
+<p>1.对代码进行修改,确保启动VHK的同时还能启动Typora</p>
+<pre><code>; Typora
+; 快捷增加字体颜色，同时打开同时关闭
+; SendInput {Text} 解决中文输入法问题
+
+;Typora的运行路径
+Run,D:\我的程序\typora\Typora\Typora.exe
+
+;设置延迟1秒，避免程序还未加载，就退出脚本
+sleep 1000
+
+;每隔一秒判断一次窗口是否还在，不在则退出窗口
+while WinExist(&quot;ahk_exe Typora.exe&quot;){
+sleep 1000
+}
+ExitApp
+
+;修改字体颜色，快捷键只在Typora内可以用
+#IfWinActive ahk_exe Typora.exe
+{
+    ; alt+0 kbd
+    !0::addKbd()
+  
+    ; alt+1 红色
+    !1::addFontColor(&quot;red&quot;)
+
+    ; alt+1 橙色
+    !2::addFontColor(&quot;orange&quot;) 
+
+     ; alt+3 黄色
+    !3::addFontColor(&quot;yellow&quot;)
+
+     ; alt+4 绿色
+    !4::addFontColor(&quot;green&quot;)
+
+    ; alt+5 浅蓝色
+    !5::addFontColor(&quot;cornflowerblue&quot;)
+
+     ; alt+6 青色
+    !6::addFontColor(&quot;cyan&quot;) 
+
+   ; alt+7 紫色
+    !7::addFontColor(&quot;purple&quot;)
+
+}
+
+; 快捷增加字体颜色
+addFontColor(color){
+    clipboard := &quot;&quot; ; 清空剪切板
+    Send {ctrl down}c{ctrl up} ; 复制
+    SendInput {TEXT}&lt;font color='%color%'&gt;
+    SendInput {ctrl down}v{ctrl up} ; 粘贴
+    If(clipboard = &quot;&quot;){
+        SendInput {TEXT}&lt;/font&gt; ; Typora 在这不会自动补充
+    }else{
+        SendInput {TEXT}&lt;/ ; Typora中自动补全标签
+    }
+}
+addKbd(){
+    clipboard := &quot;&quot; ; 清空剪切板
+    Send {ctrl down}c{ctrl up} ; 复制
+    SendInput {TEXT}&lt;kbd&gt;
+    SendInput {ctrl down}v{ctrl up} ; 粘贴
+    If(clipboard = &quot;&quot;){
+        SendInput {TEXT}&lt;/kbd&gt; ; Typora 在这不会自动补充
+    }else{
+        SendInput {TEXT}&lt;/ ; Typora中自动补全标签
+    }
+}
+</code></pre>
+<p>2.对Typora启动快捷方式所指向路径修改</p>
+<img src="../图片文件夹/image-20210214231214072.png" alt="image-20210214231214072" style="zoom:50%;" />
+<p>3.这里会发现启动方式的图标变了,变成一个VHK的图标,这里点击上图的更改图标,选择Typora.exe,发现有图标提供选择,选择原始那个就好</p>
+<p>4.修改完毕，尽情使用吧！</p>
+<h2 id="112-vlooktm">11.2 VLOOK<sup>TM</sup></h2>
+<h3 id="1121-什么是-vlooktm">11.2.1 什么是 VLOOK<sup>TM</sup></h3>
+<p><a href="https://github.com/MadMaxChow/VLOOK">VLOOK™</a> 是针对由 <a href="https://www.typora.io/">Typora</a>（目前最好的跨平台 Markdown 编辑器，没有之一）导出的 HTML 文件进行增强的插件。</p>
+<p>VLOOK™ 也许是目前最好的 Markdown 增强插件之一，也是==<strong>开源中国（<a href="https://www.oschina.net/p/vlook">OSChina.net</a>）推荐的国产开源产品</strong>。==</p>
+<p><a href="https://madmaxchow.github.io/VLOOK/theme-fancy.html">VLOOK™说明文档及演示</a></p>
+<h2 id="113-typora主题推荐">11.3 Typora主题推荐</h2>
+<p><strong>Typora</strong> 官网主题 : https://theme.typora.io/</p>
+<p>为 Typora 编写自定义主题: <strong>https://theme.typora.io/doc/Write-Custom-Theme/</strong> （可以自己编写）</p>
+<p>官网主题推荐 <strong>Drake</strong></p>
+<ul>
+<li>白天主题 Drake Google</li>
+<li>晚上主题 Drake Vue3</li>
+</ul>
+<h3 id="下载主题方法">下载主题方法</h3>
+<p>打开主题的网址</p>
+<p>选中喜欢的主题</p>
+<p>点击下载</p>
+<p>⚠️有部分下载的压缩包，请解压，然后把解压出来的所有文件都按照下方的方法移入文件夹</p>
+<h3 id="安装主题方法">安装主题方法</h3>
+<ul>
+<li>首先确定已安装<a href="https://typora.io/">Typora</a></li>
+<li>通过<code>文件 -&gt; 偏好设置 -&gt; 打开主题文件夹</code>打开theme目录</li>
+<li>复制你想要的对应主题名称<code>*.css</code>后缀文件 到<code>theme</code>目录下然后重启, 选择菜单 -&gt; 主题</li>
+<li>重启</li>
+</ul>
+<h1 id="12其他软件">12.其他软件</h1>
+<p>在2022年，Typora再也不是非你不可，Typora还是没有更新仓库文件夹。</p>
+<p>并且现在的笔记软件已经进入到了一条新的赛道上，那就是<mark>第二大脑</mark>的工作流</p>
+<p>相关链接如下</p>
+<p>建立第二个大脑：概述 - 知乎<br>
+https://zhuanlan.zhihu.com/p/434544404</p>
+<p>推荐黑曜石，也就是 obsidian 软件</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Markdown基本语法]]></title>
+        <id>https://billy12880.github.io/markdown-ji-ben-yu-fa/</id>
+        <link href="https://billy12880.github.io/markdown-ji-ben-yu-fa/">
+        </link>
+        <updated>2023-09-14T10:07:42.000Z</updated>
+        <summary type="html"><![CDATA[<p>Markdown基本语法</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Markdown基本语法</p>
+<!-- more -->
+<p>[toc]</p>
+<h2 id="1markdown-标题">1.Markdown 标题</h2>
+<ul>
+<li><strong>使用 # 号可表示 1-6 级标题，一级标题对应一个 # 号，二级标题对应两个 # 号，以此类推。</strong></li>
+</ul>
+<pre><code class="language-#">## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+</code></pre>
+<p>显示效果：</p>
+<figure data-type="image" tabindex="1"><img src="https://picshack.net/ib/5E8OFOt8u8.gif" alt="5E8OFOt8u8.gif" loading="lazy"></figure>
+<h2 id="2markdown-序列">2.Markdown 序列</h2>
+<pre><code>- 无序列表
+* 无序列表
++ 无序列表
+1. 有序列表
+- [] 未完成任务
+- [x]已完成任务
+//注意-后面有空格,文本前面也有空格
+//-也可以用*或+号代替
+</code></pre>
+<ul>
+<li>无序列表</li>
+</ul>
+<ol>
+<li>有序列表</li>
+</ol>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-8983558"><label class="task-list-item-label" for="task-item-8983558">  未完成任务</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-9095846"><label class="task-list-item-label" for="task-item-9095846">  已完成任务</label></li>
+</ul>
+<h2 id="2markdown-段落换行">2.Markdown 段落(换行)</h2>
+<ul>
+<li><strong>段落的换行是使用两个以上空格加上回车</strong>。</li>
+</ul>
+<figure data-type="image" tabindex="2"><img src="https://picshack.net/ib/NXvrLqgVOS.png" alt="NXvrLqgVOS.png" loading="lazy"></figure>
+<ul>
+<li><strong>也可以在段落后面使用一个空行来表示重新开始一个段落。</strong></li>
+</ul>
+<figure data-type="image" tabindex="3"><img src="https://picshack.net/ib/V98wVAFKvg.png" alt="V98wVAFKvg.png" loading="lazy"></figure>
+<h2 id="3markdown-字体">3.Markdown 字体</h2>
+<ul>
+<li>
+<p><strong>Markdown 可以使用以下几种字体：</strong></p>
+<pre><code>*斜体文本*
+_斜体文本_
+**粗体文本**
+__粗体文本__
+***粗斜体文本***
+___粗斜体文本___
+</code></pre>
+</li>
+<li>
+<p><strong>显示效果如下所示：</strong></p>
+</li>
+</ul>
+<figure data-type="image" tabindex="4"><img src="https://picshack.net/ib/1zrTOPAfEv.gif" alt="1zrTOPAfEv.gif" loading="lazy"></figure>
+<h2 id="4markdown-分割线"><strong>4.Markdown 分割线</strong></h2>
+<ul>
+<li><strong>可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：</strong></li>
+</ul>
+<pre><code>***
+
+* * *
+
+*****
+
+- - -
+
+----------
+</code></pre>
+<h2 id="5markdown-删除线和下划线"><strong>5.Markdown 删除线和下划线</strong></h2>
+<ul>
+<li>
+<p><strong>在文字的两端加上两个 ~~ 即可添加删除线</strong></p>
+</li>
+<li>
+<p><strong>在文字的前端加上&lt; u&gt;后端加</u>即可添加删除线</strong></p>
+<pre><code>~~删除线~~
+&lt;u&gt;你好&lt;/u&gt;
+</code></pre>
+</li>
+<li>
+<p><strong>显示效果</strong></p>
+<p><s>这是删除线</s></p>
+<p><u>这是下划线</u></p>
+</li>
+</ul>
+<h2 id="6markdown-脚注"><strong>6.Markdown 脚注</strong></h2>
+<ul>
+<li><strong>脚注是对文本的补充说明.</strong></li>
+<li><strong>首先创建要注明的文本:</strong></li>
+</ul>
+<pre><code>[^备注]: 这是脚注需要显示的内容! 
+</code></pre>
+<ul>
+<li><strong>添加脚注</strong></li>
+</ul>
+<pre><code>在需要添加脚注的文本后面添加脚注代号[^备注]
+</code></pre>
+<ul>
+<li><strong>显示效果</strong></li>
+</ul>
+<p>在需要添加脚注的文本后面添加脚注代号<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<hr>
+<h2 id="7markdown引用区块"><strong>7.Markdown引用/区块</strong></h2>
+<ul>
+<li><strong>在段落开头使用 &gt; 符号加<mark>空格</mark>,可以多层嵌套:</strong></li>
+</ul>
+<pre><code>&gt; 这样引用
+&gt; 这是一级嵌套
+&gt;&gt; 这是二级嵌套
+&gt;&gt;&gt; 这是三级嵌套
+&gt;&gt;&gt;&gt; ...
+</code></pre>
+<ul>
+<li>
+<p><strong>显示效果</strong></p>
+<blockquote>
+<p>这样引用</p>
+</blockquote>
+<blockquote>
+<p>这是一级嵌套</p>
+<blockquote>
+<p>这是二级嵌套</p>
+<blockquote>
+<p>这是三级嵌套</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<h2 id="8markdown插入代码"><strong>8.Markdown插入代码</strong></h2>
+<ul>
+<li><strong>可以使用`包裹代码</strong></li>
+<li><strong>也可以使用``` 包裹一段代码，并指定一种语言（也可以不指定）：</strong> <sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></li>
+</ul>
+<pre><code>`IF()`
+​~~~python~~~
+
+</code></pre>
+<ul>
+<li><strong>显示效果</strong></li>
+</ul>
+<p><code>IF()</code></p>
+<pre><code class="language-python~~~">
+</code></pre>
+<h2 id="9markdown超链接"><strong>9.Markdown超链接</strong></h2>
+<pre><code>[链接名称](链接地址)
+
+或者
+
+&lt;链接地址&gt;
+</code></pre>
+<p><strong>例如:</strong></p>
+<pre><code>打开[百度](https://www.baidu.com/)
+
+&lt;https://www.baidu.com/&gt;
+</code></pre>
+<ul>
+<li><strong>显示效果</strong></li>
+</ul>
+<p>打开<a href="https://www.baidu.com/">百度</a></p>
+<p><a href="https://www.baidu.com/">https://www.baidu.com/</a></p>
+<p>通过变量设置超链接</p>
+<pre><code>这个链接用  [goodle] 作为网址变量 [Google][goodle]
+这个链接用   [Baidu]作为网址变量 [Baidu][Baidu]
+然后在文档的结尾为变量赋值（网址）
+
+  [goodle]: http://www.google.com
+  [Baidu]: https://www.baidu.com
+  
+  //把要加超链接的文字用[]包裹,后面加变量名
+</code></pre>
+<ul>
+<li>
+<p><strong>显示效果</strong></p>
+<p>这个链接用 1 作为网址变量 <a href="http://www.google.com">Google</a><br>
+这个链接用2 作为网址变量 <a href="https://www.baidu.com">Baidu</a><br>
+然后在文档的结尾为变量赋值（网址）</p>
+</li>
+</ul>
+<h2 id="10markdown图片"><strong>10.Markdown图片</strong></h2>
+<pre><code>![alt 属性文本](图片地址)
+
+![alt 属性文本](图片地址 &quot;可选标题&quot;)
+</code></pre>
+<p>开头一个感叹号 !</p>
+<p>接着一个方括号，里面放上图片的替代文字</p>
+<p>接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上选择性的 'title' 属性的文字。</p>
+<ul>
+<li><strong>使用实例：</strong></li>
+</ul>
+<pre><code>![RUNOOB 图标](https://picshack.net/ib/ZZnwK3Lk9w.png)
+
+![RUNOOB 图标](https://picshack.net/ib/ZZnwK3Lk9w.png &quot;Goodle&quot;)
+</code></pre>
+<ul>
+<li><strong>显示效果</strong></li>
+</ul>
+<figure data-type="image" tabindex="5"><img src="https://picshack.net/ib/ZZnwK3Lk9w.png" alt="RUNOOB 图标" loading="lazy"></figure>
+<figure data-type="image" tabindex="6"><img src="https://picshack.net/ib/ZZnwK3Lk9w.png" alt="RUNOOB 图标" title="goodle" loading="lazy"></figure>
+<ul>
+<li><strong>也可以像网址那样对图片网址使用变量:</strong></li>
+</ul>
+<pre><code>这个链接用 1 作为网址变量 [Goodle][1].
+然后在文档的结尾为变量赋值（网址）
+
+[1]: http://static.runoob.com/images/runoob-logo.png
+</code></pre>
+<ul>
+<li><strong>Markdown 还可以指定图片的高度与宽度，如果你需要的话，你可以使用普通的 <img> 标签。</strong></li>
+</ul>
+<pre><code>&lt;img decoding=&quot;async&quot; src=&quot;https://picshack.net/ib/ZZnwK3Lk9w.png&quot; width=&quot;50%&quot; &gt;
+</code></pre>
+<img decoding="async" src="https://picshack.net/ib/ZZnwK3Lk9w.png" width="50%">
+<h2 id="11markdown-表格"><strong>11.Markdown 表格</strong></h2>
+<p>制作表格使用 <strong>|</strong> 来分隔不同的单元格，使用 <strong>-</strong> 来分隔表头和其他行。</p>
+<pre><code>|  表头   | 表头  | 姓名 |
+|  ----  | ----  | ---- |
+| 单元格  | 单元格 | 张三 |
+| 单元格  | 单元格 | 李四 |
+//注意|前后有空格
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>表头</th>
+<th>表头</th>
+<th>姓名</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>张三</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>李四</td>
+</tr>
+</tbody>
+</table>
+<p>对齐方式</p>
+<ul>
+<li><strong>-:</strong> 设置内容和标题栏居右对齐。</li>
+<li><strong>:-</strong> 设置内容和标题栏居左对齐。</li>
+<li><strong>:-:</strong> 设置内容和标题栏居中对齐。</li>
+</ul>
+<pre><code>| 左对齐 | 右对齐 | 居中对齐 |
+| :-----| ----: | :----: |
+| 单元格 | 单元格 | 单元格 |
+| 单元格 | 单元格 | 单元格 |
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">左对齐</th>
+<th style="text-align:right">右对齐</th>
+<th style="text-align:center">居中对齐</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">单元格</td>
+<td style="text-align:right">单元格</td>
+<td style="text-align:center">单元格</td>
+</tr>
+<tr>
+<td style="text-align:left">单元格</td>
+<td style="text-align:right">单元格</td>
+<td style="text-align:center">单元格</td>
+</tr>
+</tbody>
+</table>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>这是脚注需要显示的内容! <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>也可以输入```后直接回车 <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[哔哩哔哩视频嵌入]]></title>
+        <id>https://billy12880.github.io/001/</id>
+        <link href="https://billy12880.github.io/001/">
+        </link>
+        <updated>2023-09-13T19:15:48.000Z</updated>
+        <summary type="html"><![CDATA[<p>在博客中嵌入哔哩哔哩视频……</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>在博客中嵌入哔哩哔哩视频……</p>
+<!-- more -->
+<h1 id="哔哩哔哩视频嵌入">哔哩哔哩视频嵌入</h1>
+<h1 id="1️⃣所使用代码">1️⃣所使用代码</h1>
+<pre><code class="language-&lt;div">    &lt;iframe style=&quot;
+        position: absolute; 
+        width: 100%; 
+        height: 100%; 
+        left: 0; top: 0;&quot; 
+        src=&quot;//player.bilibili.com/player.html?aid=633622827&amp;bvid=BV1fb4y187r9&amp;cid=424484231&amp;p=1&amp;high_quality=1&quot; 
+        scrolling=&quot;no&quot; 
+        border=&quot;0&quot; 
+        frameborder=&quot;no&quot; 
+        framespacing=&quot;0&quot; 
+        allowfullscreen=&quot;true&quot;&gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+</code></pre>
+<h1 id="2️⃣操作步骤">2️⃣操作步骤</h1>
+<ol>
+<li>分享哔哩哔哩视频，选择【嵌入代码】</li>
+<li>分享嵌入代码中的播放地址<br>
+<img src="https://billy12880.github.io/post-images/1694633290893.jpg" alt="" loading="lazy"></li>
+</ol>
+<h1 id="3️⃣说明">3️⃣说明</h1>
+<ol>
+<li>直接复制【嵌入代码】也可以播放，</li>
+<li>通过替换后会让视频播放界面尺寸更加适合</li>
+<li>禁止自动播放，需要在 <mark>&amp;p=1</mark>后面添加 <mark>&amp;autoplay=0</mark>//<a href="https://www.87com.com/post-55.html">教程</a></li>
+</ol>
+<h1 id="4️⃣视频教程">4️⃣视频教程</h1>
+<div style="position: relative; padding: 30% 45%;">
+    <iframe style="
+        position: absolute; 
+        width: 100%; 
+        height: 100%; 
+        left: 0; top: 0;" 
+        src="//player.bilibili.com/player.html?aid=633622827&bvid=BV1fb4y187r9&cid=424484231&p=1&autoplay=0&high_quality=1" 
+        scrolling="no" 
+        border="0" 
+        frameborder="no" 
+        framespacing="0" 
+        allowfullscreen="true">
+    </iframe>
+</div>
+<hr>
+<pre><code>&lt;iframe style=&quot;
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    left: 0; top: 0;&quot; 
+    src=&quot;//player.bilibili.com/player.html?aid=633622827&amp;bvid=BV1fb4y187r9&amp;cid=424484231&amp;p=1&amp;high_quality=1&quot; 
+    scrolling=&quot;no&quot; 
+    border=&quot;0&quot; 
+    frameborder=&quot;no&quot; 
+    framespacing=&quot;0&quot; 
+    allowfullscreen=&quot;true&quot;&gt;
+&lt;/iframe&gt;
+</code></pre>
+</div>
+<table>
+<thead>
+<tr>
+<th>D</th>
+<th>T</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023-11-20</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://billy12880.github.io/hello-gridea/</id>
+        <link href="https://billy12880.github.io/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="https://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+</feed>
